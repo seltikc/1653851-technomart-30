@@ -1,0 +1,55 @@
+.page {
+   font-size: 10px;
+}
+
+:root {
+   --basic-black: #000;
+   --basic-red: #EE3643;
+   --basic-header: #293449;
+   --basic-nav: #32425C;
+   --basic-white:#fff;
+   --basic-background-services: #F1F5F7;
+   --basic-background-products:#F9F5F0;
+}
+
+.page__body {
+   margin: 0;
+   padding: 0;
+
+   font-family: 'Cuprum', sans-serif;
+   font-family: 'PT Sans', sans-serif;
+
+   font-size: 1.8rem;
+   font-weight: 400;
+   line-height: 1.6;
+   color: var(--basic-black);
+
+   background-color: var(--basic-white);
+   
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+.main__header__form {
+   border: none;
+}
+
+.main__header__item {
+   text-decoration: none;
+}
+
+.main__header__order {
+   text-decoration: none;
+}
