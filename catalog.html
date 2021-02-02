@@ -1,115 +1,128 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Каталог интернет-магазина Техномарт</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+×ml">
+  <link rel="apple-touch-icon" href="img/favicon/icons.png">
+  <link rel="manifest" href="favicons.webmanifest">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  
+  <title>Интернет-магазин Техномарт</title>
 </head>
-<body>
-    <header>
-      <div>
-        <a href="index.html">
-        <img src="img/logo.svg" alt="Техномарт">
-        </a>
-    
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <input type="search" name="search" placeholder="Поиск:">
-        </form>
-    
-        <div>
-          <a href="#">Закладки:</a>
-          <a href="#">Корзина:</a>
-          <a href="#">Оформить заказ</a>
-        </div>
-    
+
+<body class="page-body">
+  <div class="page-container">
+  <header class="header">
+    <div class="header__main-block">
+      <a class="header__main-logo" href="#">
+        <img src="img/logo.svg" width="220" height="47" alt="Техномарт">
+      </a>
+
+      <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="main-form__search" type="search" name="search" placeholder="Поиск:">
+      </form>
+
+      <div class="main-list">
+        <a class="main-list__item" href="#">Закладки:</a>
+        <a class="main-list__item" href="#">Корзина:</a>
+        <a class="main-list__item main-list__item--green" href="#">Оформить заказ</a>
+      </div>
+
+    </div>
+
+    <section class="header-contacts">
+      <h1 class="header-contacts__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1> <!--Курсив сделаем CSS-->
+
+      <div class="header-block">
+        <a class="header-block__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <p class="header-block__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
     
-      <section>
-        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1> <!--Курсив сделаем CSS-->
-    
-        <div>
-          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        </div>
-        
-        <ul>
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Регистрация</a></li>
-        </ul>
-      </section>
-    
-      <nav>
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
+      <ul class="header-regist list-reset">
+        <li class="header-regist__login" ><a href="#">Войти</a></li>
+        <li class="header-regist__registration"><a href="#">Регистрация</a></li>
+      </ul>
+
+      <nav class="nav">
+        <ul class="nav-menu list-reset">
+          <li class="nav-menu__item"><a href="#">Главная</a></li>
+          <li class="nav-menu__item"><a href="#">Компания</a></li>
+          <li class="nav-menu__item"><a href="#">Каталог</a></li>
+          <li class="nav-menu__item"><a href="#">Новости</a></li>
+          <li class="nav-menu__item"><a href="#">Спецпредложения</a></li>
+          <li class="nav-menu__item"><a href="#">Доставка</a></li>
+          <li class="nav-menu__item"><a href="#">Контакты</a></li>
         </ul>
       </nav>
-    </header> <!--==================== Шапка сайта-->
+    </section>
+
+  </header> <!--====================/.Header-->
     
     <main>
-      <div>
-        <ul>
-          <li><a href="#">Домик)</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Перфораторы</a></li>
+      <div class="bread-crumbs">
+        <ul class="bread-crumbs__list list-reset">
+          <li class="bread-crumbs__item"><a href="#"></a></li>
+          <li class="bread-crumbs__item"><a href="#">Каталог</a></li>
+          <li class="bread-crumbs__item"><a href="#">Инструмент</a></li>
+          <li class="bread-crumbs__item"><a href="#">Перфораторы</a></li>
         </ul>
       </div> <!--==================== Хлебные крошки-->
-      <div>
-        <h2>Перфораторы</h2>
+      <div class="perforator">
+        <h2 class="perforator__subtitle">Перфораторы</h2>
       </div>
 
       <section>
 
-        <form action="https://echo.htmlacademy.ru/" method="GET">
-          <div>
-            <h3>Фильтр:</h3>
+        <form class="form" action="https://echo.htmlacademy.ru/" method="GET">
+          <div class="form__wrap">
+            <h3 class="form__subtitle">Фильтр:</h3>
           </div>
-        <fieldset>
-          <legend>Цена:</legend>
+        <fieldset class="fieldset">
+          <legend class="fieldset__price">Цена:</legend>
               
-            <label>
-              <input type="range" min="0" max="30000" step="1">
+            <label class="lable-range">
+              <input class="lable-range__input" type="range" min="0" max="30000" step="1">
             </label>
               
-            <label>
-              <input type="text" name="min-price" id="min-price-field" value="0">
+            <label class="lable-text">
+              <input class="lable-text__input" type="text" name="min-price" id="min-price-field" value="0">
             </label>
               
-            <label>
-              <input type="text" name="max-price" id="max-price-field" value="30000">
+            <label class="lable-price">
+              <input class="lable-price__input" type="text" name="max-price" id="max-price-field" value="30000">
             </label>
         </fieldset>
 
-        <fieldset>
-          <legend>Производители:</legend>
-            <ul>
+        <fieldset class="fieldset">
+          <legend class="fieldset__price">Производители:</legend>
+            <ul class="fieldset__list list-reset">
 
-              <li>
-                <input type="checkbox" name="Bosch" id="bosch" checked>
+              <li class="fieldset__item">
+                <input class="fieldset__item-checked" type="checkbox" name="Bosch" id="bosch" checked>
                 <label for="bosch">Bosch</label>
               </li>
 
-              <li>
+              <li class="fieldset__item">
                 <input type="checkbox" name="Интерскол" id="interskol">
                 <label for="interskol">Интерскол</label>
               </li>
 
-              <li>
-                <input type="checkbox" name="Makita" id="makita" checked>
+              <li class="fieldset__item">
+                <input class="fieldset__item-checked" type="checkbox" name="Makita" id="makita" checked>
                 <label for="makita">Makita</label>
               </li>
 
-              <li>
+              <li class="fieldset__item">
                 <input type="checkbox" name="DeWalt" id="dewalt">
                 <label for="dewalt">DeWalt</label>
               </li>
 
-              <li>
+              <li class="fieldset__item">
                 <input type="checkbox" name="Hitachi" id="hitachi">
                 <label for="hitachi">Hitachi</label>
               </li>
@@ -117,21 +130,21 @@
             </ul>
         </fieldset> <!--==================== Производители-->
               
-        <fieldset>
-          <legend>Питание:</legend>
-            <ul>
-              <li>
+        <fieldset class="fieldset">
+          <legend class="fieldset__price">Питание:</legend>
+            <ul class="fieldset__list list-reset">
+              <li class="fieldset__item">
                 <input type="radio" name="power" id="battery" value="Аккумуляторные" checked>
                 <label for="battery">Аккумуляторные</label>
               </li>
 
-              <li>
+              <li class="fieldset__item">
                 <input type="radio" name="power" id="electric" value="Сетевые">
                 <label for="electric">Сетевые</label>
               </li>
             </ul>
         </fieldset>
-          <button type="submit">Показать</button>
+          <button class="form-btn" type="submit">Показать</button>
       </form>
       </section> <!--==================== Вся Форма-->
 
@@ -312,56 +325,56 @@
         </div>
       </section> <!--==================== Пара слов о перфораторах-->
     </main> <!--====================/.Основной контент-->
-    <footer>
+    <footer class="footer">
 
-      <div>
-        <div>
-          <a href="#"><img src="img/logofoot.svg" alt="Logo-footer"></a>
+      <div class="footer__nav">
+        <div class="footer__logo">
+          <a href="#"><img src="img/logofoot.svg" alt="logo-footer"></a>
         </div>
       
-        <ul>
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul class="footer__list list-reset">
+          <li class="footer__item"><a href="#">Компания</a></li>
+          <li class="footer__item"><a href="#">Новости</a></li>
+          <li class="footer__item"><a href="#">Каталог</a></li>
+          <li class="footer__item"><a href="#">Доставка</a></li>
+          <li class="footer__item"><a href="#">Контакты</a></li>
         </ul>
       </div>
       
-      <div>
-        <div>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+      <div class="footer-nav2">
+        <div class="footer__contacts">
+          <p class="footer__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a class="footer__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </div>
-        <ul>
-          <li><a href="#">Материалы</a></li>
-          <li><a href="#">Техника</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Спецпредложения</a></li>
+        <ul class="footer__list footer__list--orange list-reset">
+          <li class="footer__item"><a href="#">Материалы</a></li>
+          <li class="footer__item"><a href="#">Техника</a></li>
+          <li class="footer__item"><a href="#">Инструмент</a></li>
+          <li class="footer__item"><a href="#">Спецпредложения</a></li>
         </ul>
       </div> <!--====================/.Footer с навигацией-->
   
-      <div>
-        <div>
+      <div class="footer-сopyright">
+        <div class="footer-сopyright__wrap">
           <div>
-            <p>&#169; 2010–2019 Компания «Техномарт»Все права защищены</p>
+            <p class="footer-сopyright__text">&#169; 2010–2019 Компания «Техномарт»Все права защищены</p>
           </div>
-            <ul>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
+            <ul class="social list-reset">
+              <li class="social__item social__item--vk"><a href="#"></a></li>
+              <li class="social__item social__item--fb"><a href="#"></a></li>
+              <li class="social__item social__item--instagram"><a href="#"></a></li>
             </ul>
           
-          <div>
-            <p>Обратная связь:<a href="mailto:htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          <div class="copyright">
+            <p class="copyright__text">Обратная связь:<a href="mailto:htmlacademy.ru">mail@htmlacademy.ru</a></p>
           </div>
-          <div>
-            <p>Разработано:—<a href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
+          <div class="copyright-development">
+            <p class="copyright-development__text">Разработано:—<a href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
           </div>
         </div>
-      </div> <!--====================/.Социальные сети почта, разработчик-->
-      
+      </div>
+      <!--====================/.Социальные сети почта, разработчик-->
   
-    </footer> <!--====================/.Подвал сайта-->
+      </footer> <!--====================/.Подвал сайта-->
 </body>
 </html>

@@ -8,6 +8,7 @@
    --basic-background-services: #F1F5F7;
    --basic-background-products: #F9F5F0;
    --basic-price: #A9A9A9;
+   --basic-form: #F7F3EC;
 }
 
 .page-body {
@@ -73,7 +74,7 @@ a {
 ======================================================= */ 
 
 .header-contacts {
-   background-image: url(/img/bg-header.png); 
+   background-image: url(img/bg-header.png); 
 }
 
 .header-contacts__title {
@@ -260,6 +261,21 @@ a {
    padding: 8px 8px; /*Рандомные свойства*/
 }
 
+.form-btn {
+   font-family: 'PT Sans', sans-serif;
+   font-size: 13px;
+   line-height: 18px;
+   font-weight: 400;
+   text-align: center;
+   text-transform: uppercase;
+
+   background-color: var(--basic-white);
+   border: 1px solid #E5E5E5;
+
+   padding: 10px 78px;
+
+}
+
 /*===================== Card-wrapper ==================
 ======================================================= */ 
 
@@ -426,7 +442,9 @@ a {
    background-image: url(/img/social/insta.svg)
 }
 
-.copyright-development__text {
+
+.copyright-development__text,
+.copyright__text {
    color: var(--basic-white);
    font-size: 16px;
    line-height: 18px;
@@ -440,7 +458,84 @@ a {
 }
 
 
+/*===================== CATALOG =======================
+=======================================================
+======================================================= */ 
 
+.bread-crumbs__item a {
+   color: var(--basic-black);
+   font-size: 13px;
+   line-height: 18px;
+   text-transform: uppercase;
+}
+
+.perforator {
+   background-color: #F2F6F8;
+}
+
+.perforator__subtitle {
+   color: var(--basic-nav);
+   font-size: 30px;
+   line-height: 30px;
+   font-weight: 400;
+   text-transform: uppercase;
+
+   padding: 10px 0;
+}
+
+/*===================== Forma== =======================
+======================================================= */ 
+
+.form__wrap {
+   background-color: var(--basic-form);
+}
+
+.form__subtitle {
+   font-size: 13px;
+   line-height: 18px;
+   text-transform: uppercase;
+
+   padding: 10px 0;
+}
+
+.fieldset__price {
+   font-size: 17px;
+   line-height: 30px;
+   font-weight: 700;
+   text-transform: uppercase;
+
+   padding: 10px 0;
+}
+
+.lable-range,
+.lable-text,
+.lable-price {
+   background-color:var(--basic-form);
+   padding: 10px 0;
+}
+
+.lable-range {
+   padding: 20px 0;
+}
+
+.lable-text__input,
+.lable-price__input {
+   font-size: 17px;
+   line-height: 18px;
+   text-align: center;
+
+   border: none;
+}
+
+.fieldset__item {
+   font-size: 15px;
+   line-height: 19px;
+   text-transform: uppercase;
+}
+
+.fieldset__item-checked {
+   color: #C5C5C5;
+}
 
 
 
