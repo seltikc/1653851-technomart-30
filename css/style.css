@@ -15,8 +15,7 @@
    margin: 0;
    padding: 0;
 
-   font-family: 'Cuprum','PT Sans', sans-serif;
-
+   font-family: 'Cuprum','Arial','Helvetica', sans-serif;
    font-size: 18px;
    font-weight: 400;
    line-height: 24px;
@@ -74,7 +73,7 @@ a {
 ======================================================= */ 
 
 .header-contacts {
-   background-image: url(img/bg-header.png); 
+   background-image: url(../img/bg-header.png); 
 }
 
 .header-contacts__title {
@@ -483,7 +482,7 @@ a {
    padding: 10px 0;
 }
 
-/*===================== Forma== =======================
+/*===================== Forma =========================
 ======================================================= */ 
 
 .form__wrap {
@@ -511,6 +510,7 @@ a {
 .lable-text,
 .lable-price {
    background-color:var(--basic-form);
+   font-family: 'PT Sans', sans-serif;
    padding: 10px 0;
 }
 
@@ -520,6 +520,7 @@ a {
 
 .lable-text__input,
 .lable-price__input {
+   font-family: 'PT Sans', sans-serif;
    font-size: 17px;
    line-height: 18px;
    text-align: center;
@@ -528,6 +529,7 @@ a {
 }
 
 .fieldset__item {
+   font-family: 'PT Sans', sans-serif;
    font-size: 15px;
    line-height: 19px;
    text-transform: uppercase;
@@ -537,5 +539,73 @@ a {
    color: #C5C5C5;
 }
 
+/*===================== Sorting =======================
+======================================================= */ 
+
+.sorting {
+   background-color: var(--basic-form);
+}
+
+.sorting__subtitle {
+   font-size: 13px;
+   line-height: 18px;
+   text-transform: uppercase;
+
+   padding: 10px 0;
+}
+
+.sorting-wrap__link {
+   color: var(--basic-black);
+   font-size: 13px;
+   line-height: 18px;
+   text-transform: uppercase;
+}
+
+/*===================== Pagination ====================
+======================================================= */ 
+.pagination__page-next a,
+.pagination__page a {
+   font-family: 'PT Sans', sans-serif;
+   font-size: 13px;
+   line-height: 18px;
+   color: var(--basic-black);
+}
+
+.pagination__page {
+   width: 38px;
+   height: 38px;
+
+   border: 1px solid #E5E5E5;
+   border-radius: 2px;
+   text-align: center;
+}
+
+.pagination__page-next {
+   display: inline-block;
+   padding: 8px 32px;
+   
+   border: 1px solid #E5E5E5;
+   border-radius: 2px;
+   
+   text-transform: uppercase;
+}
 
 
+/*===================== Pagination ====================
+======================================================= */ 
+
+.perforator-info__wrap {
+   background-color: #F1F5F7;
+}
+
+.perforator-info__subtitle {
+   font-size: 30px;
+   line-height: 30px;
+   font-weight: 400;
+   text-transform: uppercase;
+}
+
+.perforator-info__text {
+   font-size: 13px;
+   font-family: 'PT Sans', sans-serif;
+}
