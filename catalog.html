@@ -7,10 +7,9 @@
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+×ml">
   <link rel="apple-touch-icon" href="img/favicon/icons.png">
   <link rel="manifest" href="favicons.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   
   <title>Интернет-магазин Техномарт</title>
 </head>
@@ -19,8 +18,8 @@
   <div class="page-container">
   <header class="header">
     <div class="header__main-block">
-      <a class="header__main-logo" href="#">
-        <img src="img/logo.svg" width="220" height="47" alt="Техномарт">
+      <a class="header__main-logo logo" href="index.html">
+        <img class="header__main-img" src="img/logo.svg" width="108" height="18" alt="Техномарт">
       </a>
 
       <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
@@ -28,15 +27,15 @@
       </form>
 
       <div class="main-list">
-        <a class="main-list__item" href="#">Закладки:</a>
-        <a class="main-list__item" href="#">Корзина:</a>
+        <a class="main-list__item main-list__item--shape" href="#">Закладки:</a>
+        <a class="main-list__item main-list__item--basket" href="#">Корзина:</a>
         <a class="main-list__item main-list__item--green" href="#">Оформить заказ</a>
       </div>
 
     </div>
 
     <section class="header-contacts">
-      <h1 class="header-contacts__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1> <!--Курсив сделаем CSS-->
+      <h2 class="header-contacts__title">Интернет-магазин строительных материалов и инструментов для ремонта</h2> <!--Курсив сделаем CSS-->
 
       <div class="header-block">
         <a class="header-block__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -50,9 +49,9 @@
 
       <nav class="nav">
         <ul class="nav-menu list-reset">
-          <li class="nav-menu__item"><a href="#">Главная</a></li>
+          <li class="nav-menu__item"><a href="index.html">Главная</a></li>
           <li class="nav-menu__item"><a href="#">Компания</a></li>
-          <li class="nav-menu__item"><a href="#">Каталог</a></li>
+          <li class="nav-menu__item"><a href="catalog.html">Каталог</a></li>
           <li class="nav-menu__item"><a href="#">Новости</a></li>
           <li class="nav-menu__item"><a href="#">Спецпредложения</a></li>
           <li class="nav-menu__item"><a href="#">Доставка</a></li>
@@ -72,8 +71,8 @@
           <li class="bread-crumbs__item"><a href="#">Перфораторы</a></li>
         </ul>
       </div> <!--==================== Хлебные крошки-->
-      <div class="perforator">
-        <h2 class="perforator__subtitle">Перфораторы</h2>
+      <div class="goods">
+        <h1 class="goods__title">Перфораторы</h1>
       </div>
 
       <section>
@@ -83,7 +82,7 @@
             <h3 class="form__subtitle">Фильтр:</h3>
           </div>
         <fieldset class="fieldset">
-          <legend class="fieldset__price">Цена:</legend>
+          <legend class="fieldset__title">Цена:</legend>
               
             <label class="lable-range">
               <input class="lable-range__input" type="range" min="0" max="30000" step="1">
@@ -99,30 +98,30 @@
         </fieldset>
 
         <fieldset class="fieldset">
-          <legend class="fieldset__price">Производители:</legend>
+          <legend class="fieldset__title">Производители:</legend>
             <ul class="fieldset__list list-reset">
 
-              <li class="fieldset__item">
+              <li class="fieldset__item fieldset__item-checkbox">
                 <input class="fieldset__item-checked" type="checkbox" name="Bosch" id="bosch" checked>
                 <label for="bosch">Bosch</label>
               </li>
 
-              <li class="fieldset__item">
+              <li class="fieldset__item fieldset__item-checkbox">
                 <input type="checkbox" name="Интерскол" id="interskol">
                 <label for="interskol">Интерскол</label>
               </li>
 
-              <li class="fieldset__item">
+              <li class="fieldset__item fieldset__item-checkbox">
                 <input class="fieldset__item-checked" type="checkbox" name="Makita" id="makita" checked>
                 <label for="makita">Makita</label>
               </li>
 
-              <li class="fieldset__item">
+              <li class="fieldset__item fieldset__item-checkbox">
                 <input type="checkbox" name="DeWalt" id="dewalt">
                 <label for="dewalt">DeWalt</label>
               </li>
 
-              <li class="fieldset__item">
+              <li class="fieldset__item fieldset__item-checkbox">
                 <input type="checkbox" name="Hitachi" id="hitachi">
                 <label for="hitachi">Hitachi</label>
               </li>
@@ -131,14 +130,14 @@
         </fieldset> <!--==================== Производители-->
               
         <fieldset class="fieldset">
-          <legend class="fieldset__price">Питание:</legend>
+          <legend class="fieldset__title">Питание:</legend>
             <ul class="fieldset__list list-reset">
-              <li class="fieldset__item">
+              <li class="fieldset__item fieldset__item-radio">
                 <input type="radio" name="power" id="battery" value="Аккумуляторные" checked>
                 <label for="battery">Аккумуляторные</label>
               </li>
 
-              <li class="fieldset__item">
+              <li class="fieldset__item fieldset__item-radio">
                 <input type="radio" name="power" id="electric" value="Сетевые">
                 <label for="electric">Сетевые</label>
               </li>
@@ -157,12 +156,12 @@
         </div>
 
         <div class="arrow">
-          <div class="arrow__war">
+          <div class="arrow__war arrow__war--top">
             <input id="q1" type="radio" name="sort">
             <label class="arrow__btn" for="q1"></label>
           </div>  
 
-          <div class="arrow__war">
+          <div class="arrow__war arrow__war--bottom">
             <input id="q2" type="radio" name="sort">
             <label class="arrow__btn" for="q2"></label>
           </div>
@@ -177,7 +176,7 @@
               </div>
               <div class="card__container">
                 <a class="card__link" href="#">Купить</a>
-                <a class="card__link2" href="#">В закладки</a>
+                <a class="card__link card__link--bookmarks" href="#">В закладки</a>
               </div>
               <div class="card__content">
                 <h3 class="card__subtitle">Перфоратор BOSCH BGF 6000</h3>
@@ -192,7 +191,7 @@
               </div>
               <div class="card__container">
                 <a class="card__link" href="#">Купить</a>
-                <a class="card__link2" href="#">В закладки</a>
+                <a class="card__link card__link--bookmarks" href="#">В закладки</a>
               </div>
               <div class="card__content">
                 <h3 class="card__subtitle">Перфоратор BOSCH BGF 6000</h3>
@@ -207,7 +206,7 @@
               </div>
               <div class="card__container">
                 <a class="card__link" href="#">Купить</a>
-                <a class="card__link2"href="#">В закладки</a>
+                <a class="card__link card__link--bookmarks"href="#">В закладки</a>
               </div>
               <div class="card__content">
                 <h3 class="card__subtitle">Перфоратор BOSCH BGF 6000</h3>
@@ -222,7 +221,7 @@
               </div>
               <div class="card__container">
                 <a class="card__link" href="#">Купить</a>
-                <a class="card__link2" href="#">В закладки</a>
+                <a class="card__link card__link--bookmarks" href="#">В закладки</a>
               </div>
               <div class="card__content">
                 <h3 class="card__subtitle">Перфоратор BOSCH BGF 3000</h3>
@@ -237,7 +236,7 @@
               </div>
               <div class="card__container">
                 <a class="card__link" href="#">Купить</a>
-                <a class="card__link2" href="#">В закладки</a>
+                <a class="card__link card__link--bookmarks" href="#">В закладки</a>
               </div>
               <div class="card__content">
                 <h3 class="card__subtitle">Перфоратор BOSCH BGF 6000</h3>
@@ -252,7 +251,7 @@
               </div>
               <div class="card__container">
                 <a class="card__link" href="#">Купить</a>
-                <a class="card__link2" href="#">В закладки</a>
+                <a class="card__link card__link--bookmarks" href="#">В закладки</a>
               </div>
               <div class="card__content">
                 <h3 class="card__subtitle">Перфоратор BOSCH BGF 2000</h3> 
@@ -267,7 +266,7 @@
               </div>
               <div class="card__container">
                 <a class="card__link" href="#">Купить</a>
-                <a class="card__link2" href="#">В закладки</a>
+                <a class="card__link card__link--bookmarks" href="#">В закладки</a>
               </div>
               <div class="card__content">
                 <h3 class="card__subtitle">Перфоратор BOSCH BGF 3000</h3>
@@ -282,7 +281,7 @@
               </div>
               <div class="card__container">
                 <a class="card__link" href="#">Купить</a>
-                <a class="card__link2" href="#">В закладки</a>
+                <a class="card__link card__link--bookmarks" href="#">В закладки</a>
               </div>
               <div class="card__content">
                 <h3 class="card__subtitle">Перфоратор BOSCH BGF 6000</h3>
@@ -297,7 +296,7 @@
               </div>
               <div class="card__container">
                 <a class="card__link" href="#">Купить</a>
-                <a class="card__link2" href="#">В закладки</a>
+                <a class="card__link card__link--bookmarks" href="#">В закладки</a>
               </div>
               <div class="card__content">
                 <h3 class="card__subtitle">Перфоратор BOSCH BFG 2000</h3> 
@@ -311,7 +310,7 @@
             <li class="pagination__page"><a href="#">1</a></li>
             <li class="pagination__page"><a href="#">2</a></li>
             <li class="pagination__page"><a href="#">3</a></li>
-            <li class="pagination__page-next"><a href="#">Следующая</a></li>
+            <li class="pagination__page"><a href="#">Следующая</a></li>
           </ul> <!--==================== Страницы карточек-->
 
       </section> <!--==================== Карточки товаров-->
@@ -329,7 +328,7 @@
 
       <div class="footer__nav">
         <div class="footer__logo">
-          <a href="#"><img src="img/logofoot.svg" alt="logo-footer"></a>
+          <a href="#"><img src="img/logofoot.svg" width="220" height="68" alt="logo-footer"></a>
         </div>
       
         <ul class="footer__list list-reset">
@@ -346,7 +345,7 @@
           <p class="footer__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <a class="footer__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </div>
-        <ul class="footer__list footer__list--orange list-reset">
+        <ul class="footer__list footer__list--goods list-reset">
           <li class="footer__item"><a href="#">Материалы</a></li>
           <li class="footer__item"><a href="#">Техника</a></li>
           <li class="footer__item"><a href="#">Инструмент</a></li>
@@ -376,5 +375,6 @@
       <!--====================/.Социальные сети почта, разработчик-->
   
       </footer> <!--====================/.Подвал сайта-->
-</body>
+    </div>   <!--====================/.КОНТЕЙНЕР-->
+  </body>
 </html>

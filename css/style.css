@@ -15,7 +15,7 @@
    margin: 0;
    padding: 0;
 
-   font-family: 'Cuprum','Arial','Helvetica', sans-serif;
+   font-family: 'Cuprum', 'Arial', sans-serif;
    font-size: 18px;
    font-weight: 400;
    line-height: 24px;
@@ -52,8 +52,13 @@ a {
 /*================ Header-Logo ========================
 ======================================================= */ 
 
+
 .header__main-block {
    background-color: var(--basic-header);
+}
+
+.logo {
+   background: var(--basic-red)
 }
 
 .main-form__search {
@@ -65,6 +70,14 @@ a {
    color: var(--basic-white);
 }
 
+.main-list__item--shape {
+   background: url("../img/icon/shape.svg") no-repeat; 
+}
+
+.main-list__item--basket {
+   background: url("../img/icon/icon-cart.svg") no-repeat;
+}
+
 .main-list__item--green {
    background-color: #63A63E;
 }
@@ -73,7 +86,7 @@ a {
 ======================================================= */ 
 
 .header-contacts {
-   background-image: url(../img/bg-header.png); 
+   background-image: url("../img/bg-header.png"); 
 }
 
 .header-contacts__title {
@@ -104,8 +117,7 @@ a {
    background-color: var(--basic-white)
 }
 
-.header-regist__login a,
-.header-regist__registration a {
+.header-regist a {
    color: var(--basic-black);
    font-size: 21px;
    line-height: 21px;
@@ -219,7 +231,7 @@ a {
    padding: 10px 32px 10px 44px;
 }
 
-.services-wrap__btn {
+.services-description__btn {
    background-color: #FF5357;
 
    text-transform: uppercase;
@@ -247,7 +259,7 @@ a {
    padding: 10px 18px; /*Рандомные свойства*/
 }
 
-.card__link2 {
+.card__link--bookmarks {
    color: var(--basic-nav);
    font-size: 14px;
    line-height: 18px;
@@ -256,6 +268,7 @@ a {
    text-decoration: none;
 
    border: 2px solid  #63A63E;
+   background-color:var(--basic-white);
 
    padding: 8px 8px; /*Рандомные свойства*/
 }
@@ -342,7 +355,7 @@ a {
 }
 
 .services__text,
-.services-wrap__text {
+.services-description__text {
    font-family: 'PT Sans' sans-serif;
    font-size: 13px;
 }
@@ -356,7 +369,7 @@ a {
    color: var(--basic-nav);
 }
 
-.services-wrap__subtitle {
+.services-description__subtitle {
    color: var(--basic-nav);
    font-family: 'PT Sans' sans-serif;
    font-size: 30px;
@@ -393,6 +406,7 @@ a {
 /*===================== Footer__nav ======================
 ======================================================= */ 
 
+
 .footer__nav {
    background: var(--basic-nav)
 }
@@ -401,7 +415,7 @@ a {
    color: #F1F5F7;
 }
 
-.footer__list--orange a {
+.footer__list--goods a {
    color: #FFD180;
 }
 
@@ -468,11 +482,11 @@ a {
    text-transform: uppercase;
 }
 
-.perforator {
+.goods{
    background-color: #F2F6F8;
 }
 
-.perforator__subtitle {
+.goods__title {
    color: var(--basic-nav);
    font-size: 30px;
    line-height: 30px;
@@ -497,7 +511,7 @@ a {
    padding: 10px 0;
 }
 
-.fieldset__price {
+.fieldset__title {
    font-size: 17px;
    line-height: 30px;
    font-weight: 700;
@@ -563,7 +577,7 @@ a {
 
 /*===================== Pagination ====================
 ======================================================= */ 
-.pagination__page-next a,
+
 .pagination__page a {
    font-family: 'PT Sans', sans-serif;
    font-size: 13px;
@@ -580,9 +594,9 @@ a {
    text-align: center;
 }
 
-.pagination__page-next {
+.pagination__page:last-child {
    display: inline-block;
-   padding: 8px 32px;
+   padding: 8px 50px;
    
    border: 1px solid #E5E5E5;
    border-radius: 2px;
