@@ -28,7 +28,7 @@
    box-sizing: border-box;
 }
 
-.page-container{
+.header-container {
    max-width: 940px;
    margin: 0 auto;
 }
@@ -55,10 +55,12 @@ a {
 
 .header__main-block {
    background-color: var(--basic-header);
+   max-width: 1980px
 }
 
 .logo {
-   background: var(--basic-red)
+   background: var(--basic-red);
+   display: inline-block;
 }
 
 .main-form__search {
@@ -320,6 +322,7 @@ a {
 }
 
 .card__price {
+   color: #A9A9A9;
    font-size: 17px;
    line-height: 18px;
    font-weight: 700;
@@ -407,7 +410,7 @@ a {
 ======================================================= */ 
 
 
-.footer__nav {
+.footer__bg {
    background: var(--basic-nav)
 }
 
