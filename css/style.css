@@ -28,7 +28,18 @@
    box-sizing: border-box;
 }
 
-.header-container {
+.header__container,
+.header-contacts__container,
+.nav-container,
+.advantages__contaiber,
+.card__container,
+.manufacturers__container,
+.services__container,
+.delivery__container,
+.footer__container,
+.footer-сopyright__container,
+.main-container {
+   
    max-width: 940px;
    margin: 0 auto;
 }
@@ -53,9 +64,15 @@ a {
 ======================================================= */ 
 
 
-.header__main-block {
+.header__main-bg{
    background-color: var(--basic-header);
-   max-width: 1980px
+}
+
+.header__wrapper {
+   display: flex;
+   justify-content: space-between;
+
+   padding: 10px 0;
 }
 
 .logo {
@@ -91,6 +108,12 @@ a {
    background-image: url("../img/bg-header.png"); 
 }
 
+.header-contacts__registr {
+   display: flex;
+   justify-content: space-between;
+   
+}
+
 .header-contacts__title {
    color: var(--basic-red);
    font-style: italic;
@@ -116,7 +139,8 @@ a {
 
 .header-regist__login,
 .header-regist__registration {
-   background-color: var(--basic-white)
+   background-color: var(--basic-white);
+   display:inline-block;
 }
 
 .header-regist a {
@@ -131,6 +155,11 @@ a {
 .nav-menu {
    background-color: var( --basic-nav); 
    box-shadow: inset 0px -5px 0px #293449;
+
+   display: flex;
+   justify-content: space-around;
+
+   padding: 10px 0;
 }
 
 .nav-menu__item a {
@@ -327,22 +356,6 @@ a {
    line-height: 18px;
    font-weight: 700;
    text-align: center;
-}
-
-/*===================== Manufacturers =================
-======================================================= */ 
-
-.manufacturers__inner {
-   background: var(--basic-background-products);
-}
-
-.manufacturers__subtitle {
-   color: var(--basic-nav);
-   font-family: 'Cuprum', sans-serif;
-   font-size: 30px;
-   line-height: 30px;
-   font-weight: 400;
-   text-transform: uppercase;
 }
 
 /*===================== Services ======================

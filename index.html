@@ -16,9 +16,10 @@
 
 <body class="page-body">
   <header class="header">
-    <div class="header__main-block">
-      <div class="header-container">
-        <a class="header__main-logo logo" href="">
+    <div class="header__main-bg">
+      <div class="header__container">
+        <div class="header__wrapper">
+        <a class="header__main-logo logo">
           <img class="header__main-img" src="img/logo.svg" width="108" height="18" alt="Техномарт">
         </a>
 
@@ -31,44 +32,47 @@
           <a class="main-list__item main-list__item--basket" href="#">Корзина:</a>
           <a class="main-list__item main-list__item--green" href="#">Оформить заказ</a>
         </div>
+        </div>
       </div>
     </div>
 
     <section class="header-contacts">
-      <div class="header-container">
-        <h1 class="header-contacts__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1> <!--Курсив сделаем CSS-->
+      <div class="header-contacts__container">
+        <div class="header-contacts__registr">
+          <h1 class="header-contacts__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1> <!--Курсив сделаем CSS-->
 
-        <div class="header-block">
-          <a class="header-block__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <p class="header-block__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        </div>
-      
-        <ul class="header-regist list-reset">
-          <li class="header-regist__login" ><a href="#">Войти</a></li>
-          <li class="header-regist__registration"><a href="#">Регистрация</a></li>
-        </ul>
-      </div>
-
-      <div class="header-container">
-        <nav class="nav">
-          <ul class="nav-menu list-reset">
-            <li class="nav-menu__item"><a href="#">Главная</a></li>
-            <li class="nav-menu__item"><a href="#">Компания</a></li>
-            <li class="nav-menu__item"><a href="catalog.html">Каталог</a></li>
-            <li class="nav-menu__item"><a href="#">Новости</a></li>
-            <li class="nav-menu__item"><a href="#">Спецпредложения</a></li>
-            <li class="nav-menu__item"><a href="#">Доставка</a></li>
-            <li class="nav-menu__item"><a href="#">Контакты</a></li>
+          <div class="header-block">
+            <a class="header-block__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <p class="header-block__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
+        
+          <ul class="header-regist list-reset">
+            <li class="header-regist__login" ><a href="#">Войти</a></li>
+            <li class="header-regist__registration"><a href="#">Регистрация</a></li>
           </ul>
-        </nav>
+        </div>
       </div>
-  
+      
+        <div class="nav-container">
+          <nav class="nav">
+            <ul class="nav-menu list-reset">
+              <li class="nav-menu__item"><a>Главная</a></li>
+              <li class="nav-menu__item"><a href="#">Компания</a></li>
+              <li class="nav-menu__item"><a href="catalog.html">Каталог</a></li>
+              <li class="nav-menu__item"><a href="#">Новости</a></li>
+              <li class="nav-menu__item"><a href="#">Спецпредложения</a></li>
+              <li class="nav-menu__item"><a href="#">Доставка</a></li>
+              <li class="nav-menu__item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
     </section>
 
   </header> <!--====================/.Header-->
   
   <main>
-    <section class="advantages header-container">
+    <section class="advantages">
+      <div class="advantages__contaiber">
         <ul class="advantages__list list-reset">
           <li class="advantages__item advantages__item--yellow">
             <h2 class="advantages__subtitle">Материалы</h2>
@@ -99,31 +103,30 @@
           </li>
         </ul>
 
-    <div class="advantages-slider slider">
-      <div class="advantages-slider__item"> 
-        <div class="advantages-slider__content">
-          <h2 class="advantages-slider__subtitle">Перфораторы</h2>
-          <p class="advantages-slider__description">Настоящие мужские игрушки</p>
-        </div>
-        <img class="advantages-slider__img" src="img/men.jpg" width="620" height="266" alt="Мужчина с перфоратором">
-        <a class="advantages-slider__btn button" href="#">открыть каталог</a>
+        <div class="advantages-slider slider">
+          <div class="advantages-slider__item"> 
+            <div class="advantages-slider__content">
+              <h2 class="advantages-slider__subtitle">Перфораторы</h2>
+              <p class="advantages-slider__description">Настоящие мужские игрушки</p>
+            </div>
+            <img class="advantages-slider__img" src="img/men.jpg" width="620" height="266" alt="Мужчина с перфоратором">
+            <a class="advantages-slider__btn button" href="#">открыть каталог</a>
+          </div>
+
+          <div class="advantages-slider__item">
+            <div class="advantages-slider__content">
+              <h2 class="advantages-slider__subtitle">Дрели</h2>
+              <p class="advantages-slider__description">Соседям на радость!</p>
+            </div>
+            <img class="advantages-slider__img" src="img/men2.jpg" width="620" height="266" alt="Мужчина с шуруповертом">
+            <a class="advantages-slider__btn button" href="catalog.html">открыть каталог</a>
+          </div>
+        </div> <!--====================/.Slider -->
       </div>
-
-      <div class="advantages-slider__item">
-        <div class="advantages-slider__content">
-          <h2 class="advantages-slider__subtitle">Дрели</h2>
-          <p class="advantages-slider__description">Соседям на радость!</p>
-        </div>
-        <img class="advantages-slider__img" src="img/men2.jpg" width="620" height="266" alt="Мужчина с шуруповертом">
-        <a class="advantages-slider__btn button" href="catalog.html">открыть каталог</a>
-      </div>
-
-    </div> <!--====================/.Slider -->
-
     </section> <!--====================/.Slider + Приемущества-->
     
-    <section class="card header-container">
-
+    <section class="card">
+      <div class="card__container">
       <div class="card__wrapper">
         <h2 class="card__title">Популярные товары:</h2>
         <a class="button" href="#">Все популярные товары</a>
@@ -133,11 +136,11 @@
             <div class="card__image">
               <img src="img/perforator/bfg9000.jpg" width="184" height="164" alt="Перфоратор bfg9000">
             </div>
-            <div class="card__container">
+            <div class="card__wrap">
               <a class="card__link" href="#">Купить</a>
               <a class="card__link card__link--bookmarks" href="#">В закладки</a>
             </div>
-            <div class="card__content">
+            <div class="card__wrap">
               <h3 class="card__subtitle">Перфоратор BOSCH BGF 9000</h3>
               <del class="card__price">32500 Р.</del> <!--Потом можно зачеркнуть стилем-->
               <a class="card__btn" href="#">25500 Р.</a>
@@ -189,12 +192,12 @@
             </div>
           </li>
         </ul>
-        
+      </div>
       </section> <!--====================/.Популярные товары - Карточки-->
 
-    <section class="manufacturers header-container">
-      <div class="manufacturers__inner">
-        <h2 class="manufacturers__subtitle">Популярные производители:</h2>
+    <section class="manufacturers manufacturers__container">
+      <div class="manufacturers__inner card__wrapper">
+        <h2 class="manufacturers__subtitle card__title" >Популярные производители:</h2>
         <a class="button" href="#">все производители</a>
       </div>
         <ul class="manufacturers__list list-reset">
@@ -210,51 +213,50 @@
       </section> <!--====================/.Производители-->
 
     
-    <section class="services header-container">
-
-      <div class="services__content">
-        <h2 class="services__subtitle">Сервисы</h2>
-          <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами!
-            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p> <!--Отступы сделаем стилем-->
-      </div>
-
-      <div class="services__inner">
-        <ul class="services__list list-reset">
-          <li class="services__item">
-            <a href="#">Доставка</a>
-          </li>
-          <li class="services__item">
-            <a href="#">Гарантия</a>
-          </li>
-          <li class="services__item">
-            <a href="#">Кредит</a>
-          </li>
-        </ul>
-
-        <div class="services-description">
-          <div class="services-description__content">
-            <h2 class="services-description__subtitle">Доставка</h2>
-            <p class="services-description__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
-            <p class="services-description__text">Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-          </div>
-
-          <div>
-            <h2 class="services-description__subtitle">Гарантия</h2>
-            <p class="services-description__text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-          </div>
-
-          <div>
-            <h2 class="services-description__subtitle">Кредит</h2>
-            <p class="services-description__text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-            <a class="services-description__btn" href="#">Отправить заявку</a>
-          </div>
+    <section class="services">
+      <div class="services__container">
+        <div class="services__content">
+          <h2 class="services__subtitle">Сервисы</h2>
+            <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами!
+              Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p> <!--Отступы сделаем стилем-->
         </div>
-      </div> 
-        
+
+        <div class="services__inner">
+          <ul class="services__list list-reset">
+            <li class="services__item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="services__item">
+              <a href="#">Гарантия</a>
+            </li>
+            <li class="services__item">
+              <a href="#">Кредит</a>
+            </li>
+          </ul>
+
+          <div class="services-description">
+            <div class="services-description__content">
+              <h2 class="services-description__subtitle">Доставка</h2>
+              <p class="services-description__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+              <p class="services-description__text">Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+            </div>
+
+            <div>
+              <h2 class="services-description__subtitle">Гарантия</h2>
+              <p class="services-description__text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+            </div>
+
+            <div>
+              <h2 class="services-description__subtitle">Кредит</h2>
+              <p class="services-description__text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+              <a class="services-description__btn" href="#">Отправить заявку</a>
+            </div>
+          </div>
+        </div> 
+      </div>  
     </section> <!--====================/.Сервисы доставка-->
 
-    <section class="delivery header-container">
-
+    <section class="delivery delivery__container">
       <div class="delivery__content">
         <h2 class="delivery__subtitle">Компания «Техномарт»</h2>
         <p class="delivery__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на<br> гастарбайтерах.</p>
@@ -280,7 +282,7 @@
 
   <footer class="footer">
     <div class="footer__bg">
-      <div class="header-container">
+      <div class="footer__container">
           <div class="footer__logo logo">
             <a href=""><img src="img/logo.svg" width="136" height="21" alt="logo-footer"></a>
           </div>
@@ -292,25 +294,25 @@
             <li class="footer__item"><a href="#">Доставка</a></li>
             <li class="footer__item"><a href="#">Контакты</a></li>
           </ul>
-      </div>
       
-      <div class="footer-nav header-container">
-        <div class="footer__contacts">
-          <p class="footer__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a class="footer__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        </div>
-        <ul class="footer__list footer__list--goods list-reset">
-          <li class="footer__item"><a href="#">Материалы</a></li>
-          <li class="footer__item"><a href="#">Техника</a></li>
-          <li class="footer__item"><a href="#">Инструмент</a></li>
-          <li class="footer__item"><a href="#">Спецпредложения</a></li>
-        </ul>
-      </div> <!--====================/.Footer с навигацией-->
+        <div class="footer-nav">
+          <div class="footer__contacts">
+            <p class="footer__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a class="footer__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </div>
+          <ul class="footer__list footer__list--goods list-reset">
+            <li class="footer__item"><a href="#">Материалы</a></li>
+            <li class="footer__item"><a href="#">Техника</a></li>
+            <li class="footer__item"><a href="#">Инструмент</a></li>
+            <li class="footer__item"><a href="#">Спецпредложения</a></li>
+          </ul>
+        </div> <!--====================/.Footer с навигацией-->
+      </div>
     </div>  
 
     <div class="footer-сopyright">
       <div class="footer-сopyright__wrap">
-        <div class="header-container">
+        <div class="footer-сopyright__container">
           <div>
             <p class="footer-сopyright__text">&#169; 2010–2019 Компания «Техномарт»Все права защищены</p>
           </div>
@@ -329,10 +331,7 @@
         </div>
       </div>
     </div>
-    <!--====================/.Социальные сети почта, разработчик-->
-
     </footer> <!--====================/.Подвал сайта-->
-  </div> <!--====================/.КОНТЕЙНЕР-->
 </body>
 
 </html>
