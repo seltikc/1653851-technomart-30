@@ -299,7 +299,7 @@ a {
    font-weight: 400;
    font-size: 30px;
    line-height: 30px;
-   font-family: "Cuprum", sans-serif;
+   font-family: "Cuprum", "Arial", sans-serif;
    color: var(--basic-nav);
    text-transform: uppercase;
 }
@@ -337,7 +337,7 @@ a {
    font-weight: 400;
    font-size: 30px;
    line-height: 30px;
-   font-family: "Cuprum", sans-serif;
+   font-family: "Cuprum", "Arial", sans-serif;
    color: var(--basic-black);
    text-transform: uppercase;
 }
@@ -349,7 +349,7 @@ a {
 
 .services__list {
    font-size: 21px;
-   font-family: "Cuprum", sans-serif;
+   font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .services__item a {
@@ -372,7 +372,7 @@ a {
    font-weight: 400;
    font-size: 30px;
    line-height: 30px;
-   font-family: "Cuprum", sans-serif;
+   font-family: "Cuprum", "Arial", sans-serif;
    color: var(--basic-black);
    text-transform: uppercase;
 }
