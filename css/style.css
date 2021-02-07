@@ -159,7 +159,7 @@ a {
 
 .advantages__item {
    width: 300px;
-   height: 123px;
+   padding: 10px 0;
 }
 
 .advantages__item--yellow {
@@ -239,7 +239,7 @@ a {
 
    font-weight: 700;
    font-size: 17px;
-   font-family: "PT Sans" sans-serif;
+   font-family: "PT Sans", "Arial", sans-serif;
    color: var(--basic-white)
 }
 
@@ -282,7 +282,7 @@ a {
    padding: 10px 78px;
 
    font-size: 13px;
-   font-family: "PT Sans", sans-serif;
+   font-family: "PT Sans", "Arial", sans-serif;
 
    background-color: var(--basic-white);
    border: 1px solid #e5e5e5;
@@ -308,7 +308,7 @@ a {
 ======================================================= */
 
 .popular__list {
-   font-family: "PT Sans" sans-serif;
+   font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .popular__subtitle {
@@ -344,7 +344,7 @@ a {
 
 .services__text {
    font-size: 13px;
-   font-family: "PT Sans" sans-serif;
+   font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .services__list {
@@ -360,7 +360,7 @@ a {
    font-weight: 400;
    font-size: 30px;
    line-height: 30px;
-   font-family: "PT Sans" sans-serif;
+   font-family: "PT Sans", "Arial", sans-serif;
    color: var(--basic-nav);
    text-transform: uppercase;
 }
@@ -379,7 +379,7 @@ a {
 
 .delivery__text {
    font-size: 13px;
-   font-family: "PT Sans" sans-serif;
+   font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .delivery__item::after {
@@ -506,7 +506,7 @@ a {
 .lable-price {
    padding: 10px 0;
 
-   font-family: "PT Sans", sans-serif;
+   font-family: "PT Sans", "Arial", sans-serif;
 
    background-color: var(--basic-form);
 }
@@ -519,7 +519,7 @@ a {
 .lable-price__input {
    font-size: 17px;
    line-height: 18px;
-   font-family: "PT Sans", sans-serif;
+   font-family: "PT Sans", "Arial", sans-serif;
    text-align: center;
 
    border: none;
@@ -528,7 +528,7 @@ a {
 .fieldset__item {
    font-size: 15px;
    line-height: 19px;
-   font-family: "PT Sans", sans-serif;
+   font-family: "PT Sans", "Arial", sans-serif;
    text-transform: uppercase;
 }
 
@@ -564,7 +564,7 @@ a {
 .pagination__page a {
    font-size: 13px;
    line-height: 18px;
-   font-family: "PT Sans", sans-serif;
+   font-family: "PT Sans", "Arial", sans-serif;
    color: var(--basic-black);
 }
 
@@ -604,5 +604,5 @@ a {
 
 .perforator-bg__text {
    font-size: 13px;
-   font-family: "PT Sans", sans-serif;
+   font-family: "PT Sans", "Arial", sans-serif;
 }
