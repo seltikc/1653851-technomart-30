@@ -197,8 +197,14 @@ a {
 /*================ Main-Slider ========================
 ======================================================= */
 
-.advantages {
-   padding-top: 50px;
+
+.advantages__list {
+   display: grid;
+   grid-template-columns: repeat(3 1fr);
+   grid-row-gap: 10px;
+   grid-template-areas: 
+   "materials instrument technic";
+
 }
 
 .advantages__item {
@@ -208,24 +214,32 @@ a {
 
 .advantages__item--yellow {
    background: #ffbf47;
+   grid-area: materials;
 }
 
 .advantages__item--blue {
    background: #3bbce3;
+   grid-area: instrument;
 }
 
 .advantages__item--purple {
    background: #dc91d8;
+   grid-area: technic;
 }
 
 .advantages__item--green {
    background: #8ed78f;
+   grid-area: tovari;
 }
 
 .advantages__item--orange {
    background: #ffc047;
+   grid-area: dostavka;
 }
 
+.advantages-slider {
+   grid-area: slaider;
+}
 .advantages__subtitle {
    font-weight: 700;
    font-size: 24px;
@@ -334,13 +348,16 @@ a {
 
 /*===================== Card-wrapper ==================
 ======================================================= */
-.popular {
+.popular__list {
    display: grid;
-   grid-template-columns: 1fr, 1fr;
+   grid-template-columns: repeat(4, 1fr);
 }
+
 
 .popular__title {
    background: var(--basic-background-products);
+   display: flex;
+   justify-content: space-between;
 }
 
 .popular__title h2 {
@@ -377,8 +394,15 @@ a {
 
 /*===================== Services ======================
 ======================================================= */
+
+
 .services {
    background-color: #f1f5f7;
+}
+
+.services__inner {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
 }
 
 .services__subtitle {
@@ -394,6 +418,7 @@ a {
    font-size: 13px;
    font-family: "PT Sans", "Arial", sans-serif;
 }
+
 
 .services__list {
    font-size: 21px;
@@ -415,6 +440,10 @@ a {
 
 /*===================== Delivery ======================
 ======================================================= */
+.delivery {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
 
 .delivery__subtitle {
    font-weight: 400;
@@ -448,7 +477,13 @@ a {
 }
 
 .footer__content {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.footer__list {
    display: flex;
+   justify-content: space-between;
 }
 
 .footer__item a {
@@ -470,6 +505,11 @@ a {
 .footer-social-bg {
    background: var(--basic-header);
 }
+
+.footer-social-bg__content {
+   display: flex;
+   justify-content: space-between;
+} 
 
 .footer__text {
    font-size: 16px;
