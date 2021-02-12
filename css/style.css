@@ -505,7 +505,7 @@ a {
 .delivery {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   gap: 235px;
+   gap: 188px;
 }
 
 .delivery__subtitle {
