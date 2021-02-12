@@ -541,7 +541,8 @@ a {
 }
 
 .footer__logo {
-   padding: 20px 0px 20px 55px;
+   display: block;
+   padding: 20px 20px 20px 60px;
 }
 
 .footer__content {
