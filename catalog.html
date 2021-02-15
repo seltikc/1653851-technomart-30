@@ -21,25 +21,22 @@
         <a class="header__main-logo logo">
           <img class="header__main-img" src="img/logo.svg" width="108" height="18" alt="Техномарт">
         </a>
-        <!-- ======================================= -->
-        <!-- Поменять класс =======   Зачем его менять? -->  
-        <!-- ======================================= -->
         <form class="form-search search" action="https://echo.htmlacademy.ru" method="post">
           <input type="search" name="search" placeholder="Поиск:">
         </form>
 
         <div class="header__link">
-          <a class="header__link-item header__link-item--shape" href="#">Закладки:</a>
-          <a class="header__link-item header__link-item--basket" href="#">Корзина:</a>
+          <a class="header__link-item header__link-item--book" href="#">Закладки 0:</a>
+          <a class="header__link-item header__link-item--basket" href="#">Корзина 0:</a>
           <a class="header__link-item header__link-item--green" href="#">Оформить заказ</a>
         </div>
       </div>
     </div>
 
     <section class="header__contacts wrapper">
-      <h1 class="header__contacts-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <h1 class="header__contacts-title">Интернет-магазин строительных материалов <br> и инструментов для ремонта</h1>
       <div class="header__contacts-address">
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <a class="header__contacts-icon header__contacts-tel " href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
 
@@ -68,7 +65,7 @@
       <div class="wrapper">
         <div class="bread-crumbs">
           <ul class="bread-crumbs__list list-reset">
-            <li class="bread-crumbs__item"><a href="#"></a></li>
+            <li class="bread-crumbs__item bread-crumbs__icon"><a href="#"></a></li>
             <li class="bread-crumbs__item"><a href="#">Каталог</a></li>
             <li class="bread-crumbs__item"><a href="#">Инструмент</a></li>
             <li class="bread-crumbs__item"><a href="#">Перфораторы</a></li>
@@ -78,8 +75,9 @@
           <h1 class="goods__title">Перфораторы</h1>
         </div>
       </div>
-
-      <section class="wrapper">
+      
+      <div class="wrapper page-catalog">
+      <section class="wrapper-form">
 
         <form class="form" action="https://echo.htmlacademy.ru/" method="GET">
           <div class="form__wrap">
@@ -151,7 +149,7 @@
       </form>
       </section> <!--==================== Вся Форма-->
 
-      <section class="sorting wrapper">
+      <section class="sorting wrapper sorting-wrap">
         <h2 class="sorting__subtitle">Сортировка:</h2>
         <div class="sorting-wrap">
           <a class="sorting-wrap__link" href="#">По цене</a>
@@ -172,11 +170,11 @@
         </div>
       </section> <!--==================== Сортировка-->
 
-      <section class="popular popular__product wrapper">
+      <section class="popular popular__product popular__grid wrapper">
           <ul class="popular__list list-reset">
             <li class="popular__item">
               <div class="popular__image">
-                <img src="img/perforator/bfg6000.jpg" width="144" height="128" alt="Перфоратор bfg6000">
+                <img src="img/perforator/bfg6000.jpg" width="220" height="160" alt="Перфоратор bfg6000">
               </div>
               <div class="popular__link">
                 <a class="popular__link-item" href="#">Купить</a>
@@ -191,7 +189,7 @@
 
             <li class="popular__item">
               <div class="popular__image">
-                <img src="img/perforator/bfg6000.jpg" width="144" height="128" alt="Перфоратор bfg6000">
+                <img src="img/perforator/bfg6000.jpg" width="220" height="160" alt="Перфоратор bfg6000">
               </div>
               <div class="popular__link">
                 <a class="popular__link-item" href="#">Купить</a>
@@ -206,7 +204,7 @@
 
             <li class="popular__item">
               <div class="popular__image">
-                <img src="img/perforator/bfg6000.jpg" width="144" height="128" alt="Перфоратор bfg6000">
+                <img src="img/perforator/bfg6000.jpg" width="220" height="160" alt="Перфоратор bfg6000">
               </div>
               <div class="popular__link">
                 <a class="popular__link-item" href="#">Купить</a>
@@ -221,7 +219,7 @@
 
             <li class="popular__item">
               <div class="popular__image">
-                <img src="img/perforator/bfg3000.jpg" width="127" height="112" alt="Перфоратор bfg3000">
+                <img src="img/perforator/bfg3000.jpg" width="220" height="160" alt="Перфоратор bfg3000">
               </div>
               <div class="popular__link">
                 <a class="popular__link-item" href="#">Купить</a>
@@ -236,7 +234,7 @@
 
             <li class="popular__item">
               <div class="popular__image">
-                <img src="img/perforator/bfg6000.jpg" width="144" height="128" alt="Перфоратор bfg6000">
+                <img src="img/perforator/bfg6000.jpg" width="220" height="160" alt="Перфоратор bfg6000">
               </div>
               <div class="popular__link">
                 <a class="popular__link-item" href="#">Купить</a>
@@ -251,7 +249,7 @@
 
             <li class="popular__item">
               <div class="popular__image">
-                <img src="img/perforator/bfg2000.jpg" width="127" height="112" alt="Перфоратор bfg2000">
+                <img src="img/perforator/bfg2000.jpg" width="220" height="160" alt="Перфоратор bfg2000">
               </div>
               <div class="popular__link">
                 <a class="popular__link-item" href="#">Купить</a>
@@ -266,7 +264,7 @@
 
             <li class="popular__item">
               <div class="popular__image">
-                <img src="img/perforator/bfg3000.jpg" width="127" height="112" alt="Перфоратор bfg3000">
+                <img src="img/perforator/bfg3000.jpg" width="220" height="160" alt="Перфоратор bfg3000">
               </div>
               <div class="popular__link">
                 <a class="popular__link-item" href="#">Купить</a>
@@ -281,7 +279,7 @@
 
             <li class="popular__item">
               <div class="popular__image">
-                <img src="img/perforator/bfg6000.jpg" width="144" height="128" alt="Перфоратор bfg6000">
+                <img src="img/perforator/bfg6000.jpg" width="220" height="160" alt="Перфоратор bfg6000">
               </div>
               <div class="popular__link">
                 <a class="popular__link-item" href="#">Купить</a>
@@ -296,7 +294,7 @@
 
             <li class="popular__item">
               <div class="popular__image">
-                <img src="img/perforator/bfg2000.jpg" width="127" height="112" alt="Перфоратор bfg2000">
+                <img src="img/perforator/bfg2000.jpg" width="220" height="160" alt="Перфоратор bfg2000">
               </div>
               <div class="popular__link">
                 <a class="popular__link-item" href="#">Купить</a>
@@ -308,7 +306,8 @@
                 <a class="popular__btn" href="#">12500 Р.</a>
               </div>
             </li>
-          </ul>  
+          </ul>
+        </div>
 
           <ul class="pagination list-reset">
             <li class="pagination__page"><a href="#">1</a></li>
@@ -333,9 +332,9 @@
       <div class="footer__bg">
       <div class="footer__content wrapper">
         <div class="footer__contacts">
-          <div class="footer__logo logo">
-            <a href=""><img src="img/logo.svg" width="136" height="21" alt="logo-footer"></a>
-          </div>
+            <a class="footer__logo logo" href="">
+            <img class="footer__logo-img" src="img/logo.svg" width="108" height="18" alt="logo-footer">
+            </a>
           <div class="footer__contacts">
             <p class="footer__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <a class="footer__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -347,7 +346,7 @@
           <ul class="footer__list list-reset">
             <li class="footer__item"><a href="#">Компания</a></li>
             <li class="footer__item"><a href="#">Новости</a></li>
-            <li class="footer__item"><a>Каталог</a></li>
+            <li class="footer__item"><a href="catalog.html">Каталог</a></li>
             <li class="footer__item"><a href="#">Доставка</a></li>
             <li class="footer__item"><a href="#">Контакты</a></li>
           </ul>

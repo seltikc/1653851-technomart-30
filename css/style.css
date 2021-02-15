@@ -603,15 +603,15 @@ a {
 }
 
 .social__item--vk {
-   background-image: url(/img/social/vk.svg);
+   background-image: url("..img/social/vk.svg");
 }
 
 .social__item--fb {
-   background-image: url(/img/social/fb.svg);
+   background-image: url("..img/social/fb.svg");
 }
 
 .social__item--instagram {
-   background-image: url(/img/social/insta.svg);
+   background-image: url("..img/social/insta.svg");
 }
 
 .footer__link a {
@@ -623,6 +623,24 @@ a {
 /*===================== CATALOG =======================
 =======================================================
 ======================================================= */
+.bread-crumbs__list {
+   display: flex;
+   align-items:center
+}
+
+.bread-crumbs__icon {
+   background: url("../img/icon/icon-home.svg") no-repeat; 
+   width: 14px;
+   height: 12px;
+}
+
+.bread-crumbs__icon:first-child {
+   margin: 0;
+}
+
+.bread-crumbs__item {
+   margin-left: 20px;
+}
 
 .bread-crumbs__item a {
    font-size: 13px;
@@ -631,12 +649,14 @@ a {
    text-transform: uppercase;
 }
 
+
 .goods {
    background-color: #f2f6f8;
 }
 
 .goods__title {
    padding: 10px 0;
+   margin-left: 25px;
 
    font-weight: 400;
    font-size: 30px;
@@ -647,6 +667,26 @@ a {
 
 /*===================== Forma =========================
 ======================================================= */
+.page-catalog {
+   display: grid;
+   grid-template-areas: 
+   "sorting sorting sorting"
+   "form popular popular";
+}
+
+.wrapper-form {
+   grid-area: form;
+   grid-template-columns: repeat(1, auto);
+}
+.sorting-wrap {
+   grid-area: sorting;
+   grid-template-columns: repeat(1, auto);
+}
+
+.popular__grid {
+   grid-area: popular;
+   grid-template-columns: repeat(1, auto);
+}
 
 .form__wrap {
    background-color: var(--basic-form);
@@ -728,6 +768,9 @@ a {
 
 /*===================== Pagination ====================
 ======================================================= */
+.pagination {
+   display: flex;
+}
 
 .pagination__page a {
    font-size: 13px;
