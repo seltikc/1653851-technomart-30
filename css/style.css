@@ -74,8 +74,7 @@ a {
 }
 
 .form-search {
-   background: url("../img/icon/search.svg") no-repeat;
-   margin-left: 17px;
+   position: relative;
 }
 
 .search input {
@@ -84,6 +83,17 @@ a {
    border: none;
    background: var(--basic-nav);
    padding: 5px;
+}
+
+.search::before {
+   content: "";
+   background: url("../img/icon/search.svg") no-repeat;
+   background-position: 0 0;
+   width: 17px;
+   height: 17px;
+   position: absolute;
+   left: 8px;
+   top: 5px;
 }
 
 
@@ -137,19 +147,30 @@ a {
    line-height: 30px;
    color: var(--basic-red);
    text-decoration: none;
+   position: relative;
    
-}
-
-.header__contacts-icon {
-   background: url("../img/icon/phone.svg") no-repeat;
 }
 
 .header__contacts-tel {
    padding: 6px 40px;
    border: 2px solid var(--basic-white);
-   width: 270px;
-
+   min-width: 270px;
 }
+
+.header__contacts-address::before {
+   content: "";
+   background: url("../img/icon/phone.svg") no-repeat;
+   position: absolute;
+   width: 19px;
+   height: 19px;
+   background-position: 0 0;
+   left: 15px;
+   top: 5px;
+}
+
+   .header__contacts-address {
+      position: relative;
+   }
 
 .header__contacts-address p {
    font-size: 14px;
