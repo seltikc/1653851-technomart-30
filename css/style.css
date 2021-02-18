@@ -75,14 +75,20 @@ a {
 
 .form-search {
    position: relative;
+   padding-left: 5px;
 }
 
-.search input {
+
+.search input{
    color: var(--basic-white);
    margin-left: 30px;
    border: none;
-   background: var(--basic-nav);
+   background: var(--basic-header);
    padding: 5px;
+}
+
+.search input::-webkit-input-placeholder {
+   color: var(--basic-white);
 }
 
 .search::before {
@@ -94,6 +100,7 @@ a {
    position: absolute;
    left: 8px;
    top: 5px;
+   margin-left: 5px;
 }
 
 
@@ -114,7 +121,7 @@ a {
 
 .header__link-item--green {
    background-color: #63a63e;
-   padding: 13px;
+   padding: 14px;
 }
 
 /*================ Header-Info ========================
@@ -219,7 +226,7 @@ a {
 /*================ Header-Navigation ==================
 ======================================================= */
 .nav {
-   padding-bottom: 50px;
+   padding-bottom: 60px;
 }
 
 .nav-menu {
@@ -239,6 +246,7 @@ a {
 /*================ Main-Slider ========================
 ======================================================= */
 .advantages {
+   padding: 59px 0px 59px 0px;
    display: grid;
 
    gap: 20px;
@@ -267,6 +275,9 @@ a {
 .advantages-slider {
    grid-area: slider;
    position: relative;
+
+   max-width: 620px;
+   max-height: 266px;
 }
 
 .advantages-slider__item {
@@ -278,43 +289,117 @@ a {
 }
 
 .advantages__item {
-   width: 300px;
-   padding: 10px 0;
+   min-width: 300px;
+   height: 123px;
+   padding-left: 23px;
 }
 
 .advantages__item--yellow {
    background: #ffbf47;
+   position: relative;
+}
+
+.advantages__item--yellow::after {
+   content: "";
+   background: url("../img/icon/color.svg") no-repeat;
+   width: 44px;
+   height: 65px;
+   position: absolute;
+   right: 43px;
+   bottom: 27px;
+}
+
+.advantages__item--yellow::before {
+   content: "";
+   background: url("../img/icon/new.svg") no-repeat;
+   width: 70px;
+   height: 70px;
+   position: absolute;
+   right: 0;
+   top: 0;
 }
 
 .advantages__item--blue {
    background: #3bbce3;
+   position: relative;
+}
+
+.advantages__item--blue::after {
+   content: "";
+   background: url("../img/icon/screwdriver.svg") no-repeat;
+   width: 75px;
+   height: 61px;
+   position: absolute;
+   right: 28px;
+   bottom: 31px;
 }
 
 .advantages__item--purple {
    background: #dc91d8;
+   position: relative;
+}
+
+.advantages__item--purple::after {
+   content: "";
+   background: url("../img/icon/tractor.svg") no-repeat;
+   width: 78px;
+   height: 62px;
+   position: absolute;
+   right: 31px;
+   bottom: 30px;
 }
 
 .advantages__item--green {
    background: #8ed78f;
+   position: relative;
+}
+
+.advantages__item--green::after {
+   content: "";
+   background: url("../img/icon/basket.svg") no-repeat;
+   width: 59px;
+   height: 71px;
+   position: absolute;
+   right: 45px;
+   bottom: 25px;
 }
 
 .advantages__item--orange {
    background: #ffc047;
+   position: relative;
 }
 
+.advantages__item--orange::after {
+   content: "";
+   background: url("../img/icon/car.svg") no-repeat;
+   width: 78px;
+   height: 63px;
+   position: absolute;
+   right: 31px;
+   bottom: 28px;
+}
 
 .advantages__subtitle {
    font-weight: 700;
    font-size: 24px;
    line-height: 30px;
    color: var(--basic-white);
+
+   padding: 20px 0px 14px 0px;
+   margin: 0;
 }
 
 .advantages__link {
+   display: inline-block;
    font-size: 14px;
    color: var(--basic-white);
+   line-height: 18px;
+   text-transform: uppercase;
+   text-align:center;
 
    background-color: rgba(255, 255, 255, 0.3);
+   padding: 10px 24px 10px 23px;
+   min-width: 135px;
 }
 
 /*==================== Slider =========================
@@ -368,10 +453,12 @@ a {
 }
 
 .advantages-slider__btn {
-   display: block;
-   width: 192px;
+   display: inline-block;
+   min-width: 192px;
    min-height: 38px;
-
+   position: absolute;
+   left: 24px;
+   bottom: 27px;
    
    padding-top: 10px;
 
@@ -389,14 +476,18 @@ a {
 
 .popular__btn {
    display: inline-block;
-   padding: 10px 32px 10px 44px;
 
-   background-color: var(--basic-red);
+   background: url("../img/icon/red-btn.svg") no-repeat;
+   min-width: 141px;
+   height: 38px;
 
    font-weight: 700;
    font-size: 17px;
    font-family: "PT Sans", "Arial", sans-serif;
-   color: var(--basic-white)
+   color: var(--basic-white);
+   text-align: center;
+   padding-top: 6px;
+   margin-bottom: 21px;
 }
 
 .services__description-btn {
@@ -451,21 +542,41 @@ a {
 /*===================== Card-wrapper ==================
 ======================================================= */
 
-.popular__list {
-   display: grid;
-   grid-template-columns: repeat(4, 220px);
-   gap: 20px;
+.popular__link {
+   display: none;
 }
 
-.popular__title h2 {
-   margin: 0;
+.popular__item {
+   max-width: 220px;
+   text-align: center;
 }
 
+.popular__content {
+   align-items:center;
+}
+
+.popular__new {
+   position: relative;
+}
+
+.popular__new::after {
+   content: "";
+   background: url("../img/icon/new.svg") no-repeat;
+   width: 70px;
+   height: 70px;
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+
+.popular__manufacturers {
+   padding-top: 70px;
+}
 .popular__title {
    background: var(--basic-background-products);
    display: flex;
    justify-content: space-between;
-   padding: 10px 14px 10px 28px;
+   padding: 29px 14px 30px 28px;
    align-items:center;
 }
 
@@ -477,7 +588,9 @@ a {
    font-family: "Cuprum", "Arial", sans-serif;
    color: var(--basic-nav);
    text-transform: uppercase;
+   margin: 0;
 }
+
 
 /*===================== Card ==========================
 ======================================================= */
@@ -485,6 +598,21 @@ a {
 .popular__list {
    font-family: "PT Sans", "Arial", sans-serif;
    padding-top: 30px;
+   display: grid;
+   grid-template-columns: repeat(4, 220px);
+   gap: 20px;
+}
+
+.popular__item {
+   border: 1px solid #EAEAEA;
+}
+.popular__img {
+   width: 220px;
+   height: 145px;
+}
+
+.poular__border-none li {
+   border: none;
 }
 
 .popular__subtitle {
@@ -493,14 +621,17 @@ a {
    line-height: 20px;
    text-align: center;
    color: var(--basic-black);
+   margin: 0;
 }
 
 .popular__price {
+   display: block;
    font-weight: 700;
    font-size: 17px;
    line-height: 18px;
    text-align: center;
    color: #a9a9a9;
+   padding: 6px 0px 13px 0px;
 }
 
 /*===================== Services ======================
