@@ -640,11 +640,14 @@ a {
 
 .services {
    background-color: #f1f5f7;
+   padding-bottom: 70px;
 }
 
 .services__inner {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
+
+   padding-top: 70px;
 }
 
 .services__subtitle {
@@ -654,11 +657,15 @@ a {
    font-family: "Cuprum", "Arial", sans-serif;
    color: var(--basic-black);
    text-transform: uppercase;
+
+   padding: 64px 0px 25px 0px;
+   margin: 0;
 }
 
 .services__text {
    font-size: 13px;
    font-family: "PT Sans", "Arial", sans-serif;
+   margin: 0;
 }
 
 
@@ -667,9 +674,27 @@ a {
    font-family: "Cuprum", "Arial", sans-serif;
 }
 
+
+.services__item {
+   width: 240px;
+   height: 61px;
+   background: var(--basic-nav);
+}
+
 .services__item a {
+   display: inline-block;
+   color: var(--basic-white);
+   padding: 13px 0px 17.5px 22px;
+}
+
+.services__item--active {
+   background: var(--basic-white)
+}
+
+.services__item--active a {
    color: var(--basic-nav);
 }
+
 
 .services__description-subtitle {
    font-weight: 400;
@@ -678,6 +703,7 @@ a {
    font-family: "PT Sans", "Arial", sans-serif;
    color: var(--basic-nav);
    text-transform: uppercase;
+   margin: 0%;
 }
 
 /*===================== Delivery ======================
