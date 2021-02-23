@@ -85,11 +85,16 @@
           </div>
         <fieldset class="fieldset">
           <legend class="fieldset__title">Цена:</legend>
-              
-            <label class="lable-range">
-              <input class="lable-range__input" type="range" min="0" max="30000" step="1">
-            </label>
-              
+          
+          <div class="fieldset__filter">
+            <div class="fieldset__range">
+              <div class="fieldset__scale">
+                <div class="fieldset__bar"></div>
+              </div>
+              <div class="fieldset__toggle fieldset__toggle--min"></div>
+              <div class="fieldset__toggle fieldset__toggle--max"></div>
+            </div>
+              <div class="lable__block">
             <label class="lable-text">
               <input class="lable-text__input" type="text" name="min-price" id="min-price-field" value="0">
             </label>
@@ -97,6 +102,8 @@
             <label class="lable-price">
               <input class="lable-price__input" type="text" name="max-price" id="max-price-field" value="30000">
             </label>
+              </div>
+          </div> 
         </fieldset>
 
         <fieldset class="fieldset">
@@ -104,43 +111,43 @@
             <ul class="fieldset__list list-reset">
 
               <li class="fieldset__item fieldset__item-checkbox">
-                <input class="fieldset__item-checked" type="checkbox" name="Bosch" id="bosch" checked>
+                <input class="fieldset__item-checked fieldset__visually-hidden" type="checkbox" name="Bosch" id="bosch" checked>
                 <label for="bosch">Bosch</label>
               </li>
 
               <li class="fieldset__item fieldset__item-checkbox">
-                <input type="checkbox" name="Интерскол" id="interskol">
+                <input class="fieldset__item-checked fieldset__visually-hidden" type="checkbox" name="Интерскол" id="interskol">
                 <label for="interskol">Интерскол</label>
               </li>
 
               <li class="fieldset__item fieldset__item-checkbox">
-                <input class="fieldset__item-checked" type="checkbox" name="Makita" id="makita" checked>
+                <input class="fieldset__item-checked fieldset__visually-hidden" type="checkbox" name="Makita" id="makita" checked>
                 <label for="makita">Makita</label>
               </li>
 
               <li class="fieldset__item fieldset__item-checkbox">
-                <input type="checkbox" name="DeWalt" id="dewalt">
+                <input class="fieldset__item-checked fieldset__visually-hidden" type="checkbox" name="DeWalt" id="dewalt">
                 <label for="dewalt">DeWalt</label>
               </li>
 
               <li class="fieldset__item fieldset__item-checkbox">
-                <input type="checkbox" name="Hitachi" id="hitachi">
-                <label for="hitachi">Hitachi</label>
+                <input class="fieldset__item-checked fieldset__visually-hidden" type="checkbox" name="Hitachi" id="hitachi">
+                <label class="fieldset__hitachi" for="hitachi">Hitachi</label>
               </li>
 
             </ul>
         </fieldset> <!--==================== Производители-->
               
         <fieldset class="fieldset">
-          <legend class="fieldset__title">Питание:</legend>
+          <legend class="fieldset__title fieldset__before">Питание:</legend>
             <ul class="fieldset__list list-reset">
               <li class="fieldset__item fieldset__item-radio">
-                <input type="radio" name="power" id="battery" value="Аккумуляторные" checked>
+                <input class="fieldset__item-checked2 fieldset__visually-hidden" type="radio" name="power" id="battery" value="Аккумуляторные" checked>
                 <label for="battery">Аккумуляторные</label>
               </li>
 
               <li class="fieldset__item fieldset__item-radio">
-                <input type="radio" name="power" id="electric" value="Сетевые">
+                <input class="fieldset__item-checked2 fieldset__visually-hidden" type="radio" name="power" id="electric" value="Сетевые">
                 <label for="electric">Сетевые</label>
               </li>
             </ul>
@@ -333,36 +340,37 @@
 
     <footer class="footer">
       <div class="footer__bg">
-      <div class="footer__content wrapper">
-        <div class="footer__contacts">
-            <a class="footer__logo logo" href="">
-            <img class="footer__logo-img" src="img/logo.svg" width="108" height="18" alt="logo-footer">
-            </a>
+        <div class="footer__content wrapper">
           <div class="footer__contacts">
-            <p class="footer__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <a class="footer__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <a class="footer__logo logo" href="">
+              <img class="footer__logo-img" src="img/logo.svg" width="138" height="23" alt="logo-footer">
+            </a>
+            <div class="footer__contacts">
+              <p class="footer__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+              <a class="footer__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            </div>
+          </div>
+  
+          <div class="footer__nav">
+  
+            <ul class="footer__list list-reset">
+              <li class="footer__item"><a href="#">Компания</a></li>
+              <li class="footer__item"><a href="#">Новости</a></li>
+              <li class="footer__item"><a>Каталог</a></li>
+              <li class="footer__item"><a href="#">Доставка</a></li>
+              <li class="footer__item"><a href="#">Контакты</a></li>
+            </ul>
+  
+            <ul class="footer__list footer__list--goods list-reset">
+              <li class="footer__item"><a href="#">Материалы</a></li>
+              <li class="footer__item"><a href="#">Техника</a></li>
+              <li class="footer__item"><a href="#">Инструмент</a></li>
+              <li class="footer__item"><a href="#">Спецпредложения</a></li>
+            </ul>
           </div>
         </div>
-  
-        <div class="footer__nav">
-  
-          <ul class="footer__list list-reset">
-            <li class="footer__item"><a href="#">Компания</a></li>
-            <li class="footer__item"><a href="#">Новости</a></li>
-            <li class="footer__item"><a href="catalog.html">Каталог</a></li>
-            <li class="footer__item"><a href="#">Доставка</a></li>
-            <li class="footer__item"><a href="#">Контакты</a></li>
-          </ul>
-  
-          <ul class="footer__list footer__list--goods list-reset">
-            <li class="footer__item"><a href="#">Материалы</a></li>
-            <li class="footer__item"><a href="#">Техника</a></li>
-            <li class="footer__item"><a href="#">Инструмент</a></li>
-            <li class="footer__item"><a href="#">Спецпредложения</a></li>
-          </ul>
-        </div>
       </div>
-    </div> <!--====================/.Footer с навигацией-->
+      <!--====================/.Footer с навигацией-->
   
       <div class="footer-social-bg">
         <div class="footer-social-bg__content wrapper">

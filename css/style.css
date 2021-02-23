@@ -109,6 +109,10 @@ a {
    margin-right: 20px;
 }
 
+.header__link-item:last-child {
+   margin: 0;
+}
+
 .header__link-item--book {
    background: url("../img/icon/book.svg") no-repeat;
    padding-left: 20px;
@@ -134,7 +138,7 @@ a {
 .header__contacts {
    display: flex;
    justify-content: space-between;
-   padding: 25px 25px;
+   padding: 25px 0px 25px 25px;
 }
 
 .header__contacts-title {
@@ -537,6 +541,7 @@ a {
 
    background-color: var(--basic-white);
    border: 1px solid #e5e5e5;
+   margin-top: 37px;
 }
 
 /*===================== Card-wrapper ==================
@@ -672,8 +677,20 @@ a {
 .services__list {
    font-size: 21px;
    font-family: "Cuprum", "Arial", sans-serif;
+   position: relative;
+
 }
 
+.services__list::after {
+   content: "";
+   background: url("../img/icon/vertical.png") no-repeat;
+   left: 300px;
+   position: absolute;
+   width: 10px;
+   height: 279px;
+   bottom: 50px;
+   left: 230px;
+}
 
 .services__item {
    width: 240px;
@@ -695,6 +712,27 @@ a {
    color: var(--basic-nav);
 }
 
+.services__description {
+   width: 619px;
+   height: 283px;
+   margin-left: 80px;
+   position: relative;
+}
+
+.services__description-item {
+   width: 300px;
+   height: 99px;
+}
+
+.services__description::after {
+   content: "";
+   background: url("../img/gazelle.png") no-repeat;
+   position: absolute;
+   width: 468px;
+   height: 261px;
+   right: 0;
+   bottom: 0;
+}
 
 .services__description-subtitle {
    font-weight: 400;
@@ -704,14 +742,25 @@ a {
    color: var(--basic-nav);
    text-transform: uppercase;
    margin: 0%;
+   padding-bottom: 30px;
 }
+
+.services__description-item--none {
+   display: none;
+}
+
+.services__description-item--active {
+   width: 300px;
+   height: 99px;
+}
+
 
 /*===================== Delivery ======================
 ======================================================= */
 .delivery {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   gap: 188px;
+   gap: 179px;
 }
 
 .delivery__subtitle {
@@ -721,34 +770,90 @@ a {
    font-family: "Cuprum", "Arial", sans-serif;
    color: var(--basic-black);
    text-transform: uppercase;
+
+   padding: 70px 0px 24px 0px;
+   margin: 0;
 }
 
 .delivery__text {
    font-size: 13px;
    font-family: "PT Sans", "Arial", sans-serif;
+   margin: 0;
+}
+
+.delivery__text-padding {
+   padding-top: 43px;
+}
+
+.delivery__item {
+   position: relative;
+   padding: 12px 0px 0px 40px;
+}
+
+.delivery__item:last-child {
+   margin-bottom: 20px;
+}
+
+.delivery__item:first-child {
+   padding-top: 0;
 }
 
 .delivery__item::after {
    content: "";
 
    display: block;
-   width: 20px;
+   width: 25px;
    height: 2px;
 
-   background-color: var(--basic-red); /*Псевдо элемент "черточки"*/
+   position: absolute;
+
+   background-color: var(--basic-red);
+   bottom: 10px;
+   left: 0;
 }
 
+.delivery__content {
+   width: 460px;
+}
+
+.delivery__img {
+   padding: 32px 0px 25px 0px;
+}
+
+.delivery__btn {
+   width: 300px;
+}
+
+.delivery__btn-1 {
+   width: 220px;
+}
 /*===================== Footer__nav ======================
 ======================================================= */
 
 .footer {
    background: var(--basic-nav);
-   margin-top: 50px;
+   margin-top: 70px;
+}
+
+.footer__bg {
+   min-height: 195px;
 }
 
 .footer__logo {
-   display: block;
-   padding: 20px 20px 20px 60px;
+   display: inline-block;
+   width: 220px;
+   height: 68px;
+   padding: 20px 41px 25px 41px;
+}
+
+.footer__logo-img {
+   width: 138;
+   height: 23px;
+}
+
+.footer__adress {
+   margin: 0;
+   padding-top: 22px;
 }
 
 .footer__content {
@@ -757,13 +862,17 @@ a {
 }
 
 .footer__nav {
-   padding-top: 30px;
+   padding-top: 37px;
 }
 
 .footer__list {
    display: flex;
    justify-content: space-between;
-   margin-top: 10px;
+}
+
+.footer__list--goods {
+   padding-top: 34px;
+   margin-left: 30px;
 }
 
 .footer__item a {
@@ -784,7 +893,7 @@ a {
 
 .footer-social-bg {
    background: var(--basic-header);
-   padding-top: 20px;
+   padding: 35px 0px 35px 0px;
 }
 
 .footer-social-bg__content {
@@ -796,6 +905,7 @@ a {
    font-size: 16px;
    line-height: 18px;
    color: var(--basic-white);
+   margin: 0;
 }
 
 .social {
@@ -890,13 +1000,70 @@ a {
 }
 
 .form__subtitle {
-   padding: 10px 0;
+   padding: 10px 0px 10px 18px;
    margin: 0;
 
    font-size: 13px;
    line-height: 18px;
    text-transform: uppercase;
 }
+
+.fieldset {
+   border: none;
+   padding: 0;
+   position: relative;
+}
+
+/*===================== Ползунок=======================
+======================================================= */
+
+.fieldset__filter {
+   width: 220px;
+   margin: 0;
+}
+
+.fieldset__range {
+   position: relative;
+   height: 80px;
+   background: #F7F3EC;
+   border-radius: 3px;
+   padding-top: 39px;
+   padding: 39px 20px 0px 20px;
+}
+
+.fieldset__range .fieldset__bar {
+   width: 80%;
+   height: 2px;
+   background: #00ba6b;
+}
+
+.fieldset__range .fieldset__scale {
+   height: 2px;
+   background:#D7DCDE;
+}
+
+.fieldset__range .fieldset__toggle {
+   position: absolute;
+   top: 31px;
+   left: 0;
+   width: 5px;
+   height: 5px;
+   padding: 0;
+   border: 10px solid #ffffff;
+   background-color: #ABABAB;
+   border-radius: 50%;
+   box-shadow: 0px 3px 3px 1px rgba(34, 60, 80, 0.2);
+   cursor: pointer;
+}
+
+.fieldset__range .fieldset__toggle--min {
+   left: 18px;
+}
+
+.fieldset__range .fieldset__toggle--max {
+   left: 160px;
+}
+
 
 .fieldset__title {
    padding: 10px 0;
@@ -907,28 +1074,118 @@ a {
    text-transform: uppercase;
 }
 
-.lable-range,
+.fieldset__item label {
+   display: block;
+   position: relative;
+   cursor: pointer;
+   padding-left: 30px;
+}
+
+.fieldset__item-checked + label::before {
+   content: "";
+   position: absolute;
+   width: 23px;
+   height: 23px;
+   left: 0;
+   top: 0;
+   border: 2px solid #C5C5C5;
+   border-radius: 3px;
+}
+
+.fieldset__item-checked:checked + label::after {
+   content: "";
+   position: absolute;
+   width: 22px;
+   height: 17px;
+   left: 5px;
+   top: 0;
+   background: url("../img/icon/check.svg") no-repeat;
+   background-position: 0 0;
+}
+
+.fieldset__item-checked2 + label::before {
+   content: "";
+   position: absolute;
+   width: 23px;
+   height: 23px;
+   left: 0;
+   top: 0;
+   border: 2px solid #C5C5C5;
+   border-radius:50%;
+}
+
+.fieldset__item-checked2:checked + label::after {
+   content: "";
+   position: absolute;
+   width: 9px;
+   height: 9px;
+   left: 7px;
+   top: 7px;
+   background: #C5C5C5 no-repeat;
+   border-radius: 50%;
+}
+
+.fieldset__before {
+   position: relative;
+}
+
+.fieldset__before::before {
+   content: "";
+   display:block;
+   width: 220px;
+   height: 1px;
+   background-color: var(--basic-black);
+   position: absolute;
+   opacity: 0.1;
+   top: 0px;
+}
+
+.fieldset__hitachi {
+   padding-bottom: 30px;
+}
+
+
+.fieldset__visually-hidden {
+   visibility: hidden;
+}
+
 .lable-text,
 .lable-price {
-   padding: 10px 0;
 
    font-family: "PT Sans", "Arial", sans-serif;
-
-   background-color: var(--basic-form);
 }
 
-.lable-range {
-   padding: 20px 0;
-}
 
 .lable-text__input,
 .lable-price__input {
+   position: relative;
+   width: 95px;
+   height: 38px;
    font-size: 17px;
    line-height: 18px;
    font-family: "PT Sans", "Arial", sans-serif;
    text-align: center;
-
    border: none;
+   background: #F7F3EC;
+   padding: 10px;
+}
+
+.lable-text::after {
+   content: "";
+   width: 9px;
+   height: 1px;
+   top: 108px;
+   left: 104px;
+   background: #444444;
+   position: absolute;
+}
+
+.lable-price__input {
+   margin-left: 25px;
+}
+
+.lable__block {
+   margin-top: 9px;
 }
 
 .fieldset__item {
@@ -994,7 +1251,8 @@ a {
 ======================================================= */
 .pagination {
    display: flex;
-   padding-top: 20px;
+   flex-wrap: wrap;
+   padding-top: 48px;
 }
 
 .pagination__page a {
@@ -1007,17 +1265,29 @@ a {
 .pagination__page {
    width: 38px;
    height: 38px;
-
-   text-align: center;
+   margin-left: 10px;
 
    border: 1px solid #e5e5e5;
    border-radius: 2px;
 }
 
+.pagination__page:first-child {
+   margin: 0;
+}
+
+.pagination__page a {
+   display: block;
+   text-align: center;
+   padding-top: 10px;
+}
+
+.pagination__page-next {
+   padding-bottom: 10px;
+}
+
 .pagination__page:last-child {
    display: inline-block;
-   width: auto;
-   padding: 8px 50px;
+   min-width: 140px;
 
    text-transform: uppercase;
 
@@ -1032,6 +1302,7 @@ a {
 .perforator-bg {
    background-color: #f1f5f7;
    padding-top: 64px;
+   margin-top: 59px;
 }
 
 .perforator-bg__subtitle {
