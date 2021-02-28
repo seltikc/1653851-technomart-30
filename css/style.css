@@ -146,12 +146,16 @@ a {
 
 .header__link {
    position: relative;
+   display: flex;
 }
 
 .header__link-item {
+   width: 150px;
+   position: relative;
    color: var(--basic-white);
    display: inline-block;
-   padding: 9px 32px 9px 32px;
+   padding: 9px 0px 9px 32px;
+   
 }
 
 .header__link-item--book:focus,
@@ -165,7 +169,7 @@ a {
    width: 14px;
    height: 15.5px;
    position: absolute;
-   left: 7px;
+   left: 10px;
    top: 13px;
    transition: 0.2s linear;
 }
@@ -176,8 +180,12 @@ a {
    width: 14px;
    height: 15.5px;
    position: absolute;
-   left: 7px;
+   left: 10px;
    top: 13px;
+}
+
+.header__link-item--basket {
+   padding-left: 49px;
 }
 
 .header__link-item--basket::before {
@@ -186,7 +194,7 @@ a {
    width: 15px;
    height: 15px;
    position: absolute;
-   left: 160px;
+   left: 25px;
    top: 13px;
    transition: 0.2s linear;
 }
@@ -197,7 +205,7 @@ a {
    width: 15px;
    height: 15px;
    position: absolute;
-   left: 160px;
+   left: 25px;
    top: 13px;
 }
 
@@ -240,6 +248,7 @@ a {
 
    width: 197px;
    margin: 0;
+   padding-bottom: 10px;
 }
 
 .header__contacts-address a {
@@ -252,7 +261,9 @@ a {
    
 }
 
+
 .header__contacts-tel {
+   display: inline-block;
    padding: 8px 58px;
    border: 2px solid var(--basic-white);
 }
@@ -265,7 +276,7 @@ a {
    height: 19px;
    background-position: 0 0;
    left: 30px;
-   top: 5px;
+   top: 15px;
 }
 
 .header__contacts-address {
@@ -286,14 +297,33 @@ a {
 
    background-color: var(--basic-white);
    text-align:center;
-   margin-left: 8px;
-   width: 121px;
-   height: 45px;
+}
 
-   padding-top: 10px;
+
+.header__regist  {
+   display: flex;
+   flex-wrap: nowrap;
+   padding-bottom: 35px;
+}
+
+.header__regist-item--login a {
+   padding: 12px 27px 12px 45px;
+}
+
+.header__regist-item--registration a {
+   padding: 12px 24px;
+}
+
+.header__regist-item {
+   margin-right: 10px;
+}
+
+.header__regist-item:last-child {
+   margin: 0;
 }
 
 .header__regist-item a {
+   display: inline-block;
    transition: 0.2s linear;
 } 
 
@@ -301,35 +331,43 @@ a {
    color: #EE3643;
 }
 
-.header__regist-item--login {
-   min-width: 121px;
+.header__regist-item a:focus {
+   color: #C5C5C5;
 }
 
-.header__regist-item--registration {
-   min-width: 150px;
-}
-
-.header__regist-item--login::before {
+.header__regist-item--login a::before {
    content: "";
    width: 19px;
    height: 17px;
    background: url("../img/icon/icon-login.jpg") no-repeat;
    background-position: 0 0;
    position: absolute;
-   top: 11px;
-   left: 12px;
+   top: 14px;
+   left: 18px;
    transition: 0.2s linear;
 }
 
-.header__regist-item--login:hover:before {
+
+.header__regist-item--login a:hover:before {
    content: "";
    width: 19px;
    height: 17px;
    background: url("../img/icon/icon-login1.svg") no-repeat;
    background-position: 0 0;
    position: absolute;
-   top: 11px;
-   left: 12px;
+   top: 14px;
+   left: 18px;
+}
+
+.header__regist-item--login a:focus:before {
+   content: "";
+   width: 19px;
+   height: 17px;
+   background: url("../img/icon/icon-login.jpg") no-repeat;
+   background-position: 0 0;
+   position: absolute;
+   top: 14px;
+   left: 18px;
 }
 
 
@@ -348,26 +386,31 @@ a {
 
 .nav-menu {
    display: flex;
+   flex-wrap: nowrap;
    justify-content: space-between;
 
    background-color: var(--basic-nav);
    box-shadow: inset 0 -5px 0 #293449;
    align-items:center;
-   height: 60px;
    padding: 0px 47px 0px 52px;
 }
 
 
-.nav-menu__item:hover {
+.nav-menu__item a:hover {
    background: var(--basic-header);
 }
 
+.nav-menu__item a:focus {
+   background: #1D2739;
+   opacity: 0.5;
+}
 
 .nav-menu__item a {
    color: var(--basic-white);
    text-decoration: none;
-   display: inline-block;
+   display: block;
    padding: 16px 20px 20px 20px;
+   margin: 0;
 }
 
 
@@ -438,7 +481,7 @@ a {
    bottom: 27px;
 }
 
-.advantages__item--yellow::before {
+.advantages__item-new:before {
    content: "";
    background: url("../img/icon/new.svg") no-repeat;
    width: 70px;
@@ -533,11 +576,11 @@ a {
 }
 
 .advantages__link:hover{
-   background: #C5C5C5
+   background: rgba(197, 197, 197, .3);
 }
 
 .advantages__link:focus {
-   background: #A9A9A9;
+   background: rgba(169, 169, 169, .3);
 }
 
 /*==================== Slider =========================
@@ -610,6 +653,33 @@ a {
    background: var(--basic-red-focus);
 }
 
+.slider-bullet {
+   position: relative;
+}
+
+.slider-bullet__btn::before {
+   content: "";
+   position: absolute;
+   width: 10px;
+   height: 10px;
+   right: 315px;
+   top: -50px;
+   border: 2px solid #C5C5C5;
+   border-radius:50%;
+   border: 2px solid var(--basic-white);
+}
+
+.slider-bullet__btn--active::before {
+   content: "";
+   position: absolute;
+   width: 10px;
+   height: 10px;
+   right: 297px;
+   top: -50px;
+   background: var(--basic-red);
+   border-radius:50%;
+   border: 2px solid var(--basic-white);
+}
 
 /*===================== BTN ===========================
 ======================================================= */
@@ -654,23 +724,6 @@ a {
    background-color: var(--basic-red);
 }
 
-
-.popular__btn {
-   display: inline-block;
-
-   background: url("../img/icon/red-btn.svg") no-repeat;
-   min-width: 141px;
-   height: 38px;
-
-   font-weight: 700;
-   font-size: 17px;
-   font-family: "PT Sans", "Arial", sans-serif;
-   color: var(--basic-white);
-   text-align: center;
-   padding-top: 6px;
-   margin-bottom: 21px;
-}
-
 .services__description-btn {
    display: inline-block;
    padding: 10px 8px 10px 9px;
@@ -692,6 +745,22 @@ a {
 
    background-color: #63a63e;
    transition: 0.2s linear;
+}
+
+.popular__btn {
+   display: inline-block;
+
+   background: url("../img/icon/red-btn.svg") no-repeat;
+   min-width: 141px;
+   height: 38px;
+
+   font-weight: 700;
+   font-size: 17px;
+   font-family: "PT Sans", "Arial", sans-serif;
+   color: var(--basic-white);
+   text-align: center;
+   padding-top: 6px;
+   margin-bottom: 21px;
 }
 
 .popular__link-item::before {
@@ -743,9 +812,6 @@ a {
    padding-bottom: 70px;
 }
 
-.popular__list a:hover {
-   background:red;
-}
 
 .popular__items {
    display: block;
