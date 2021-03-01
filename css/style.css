@@ -733,9 +733,9 @@ a {
    background-color: #ff5357;
 }
 
-.popular__link-item--green{
-   padding: 10px 18px; /*Рандомные свойства*/
-
+.popular__link-item--green {
+   display: inline-block;
+   padding: 10px 0px 10px 0px;
    font-size: 14px;
    line-height: 18px;
    text-align: center;
@@ -744,6 +744,8 @@ a {
    text-decoration: none;
 
    background-color: #63a63e;
+
+   box-shadow: inset 0px -3px 0px #367315;
    transition: 0.2s linear;
 }
 
@@ -761,6 +763,7 @@ a {
    text-align: center;
    padding-top: 6px;
    margin-bottom: 21px;
+   margin-left: 45px;
 }
 
 .popular__link-item::before {
@@ -774,7 +777,7 @@ a {
 
 .popular__link-item--bookmarks {
    display: inline-block;
-   padding: 8px 8px; /*Рандомные свойства*/
+   padding: 10px 0px 10px 0px;
 
    font-size: 14px;
    line-height: 18px;
@@ -813,26 +816,29 @@ a {
 }
 
 
-.popular__items {
-   display: block;
-   width: 220px;
-   height: 145px;
-}
-
 .popular__link {
    display: none;
    position: absolute;
-   top: 38px;
-   left: 40px;
+   width: 220px;
+   height: 125px;
+   top: 40px;
+   padding-left: 45px;
+
+   transition: 0.2s linear;
 }
 
+.popular__link:hover {
+   background: white;
+}
 
 .popular__link-item {
-   min-width: 135px;
    border-radius: 3px;
    display: block;
+   width: 135px;
+   height: 38px;
    margin-bottom: 10px;
 }
+
 
 .popular__link-item--green:hover {
    background: #5FBB2D;
@@ -851,16 +857,31 @@ a {
 }
 
 .popular__item {
+   position: relative;
    max-width: 220px;
-   text-align: center;
    border: 1px solid #EAEAEA;
-   box-shadow: 2px 2px 4px #EAEAEA;
+   transition: 0.3s linear;
+   text-decoration: none;
 }
 
 .popular__item:hover
 .popular__link {
    display: block;
 }
+
+.popular__item:hover 
+.popular__image-none {
+   display: none;
+}
+
+.popular__item:hover {
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.popular__item:active {
+   opacity: 0.5;
+}
+
 
 .popular__image img:hover {
    display: none;
@@ -987,20 +1008,21 @@ a {
    position: absolute;
    width: 10px;
    height: 279px;
-   bottom: 50px;
+   bottom: -50px;
    left: 230px;
 }
 
 .services__item {
+   background: var(--basic-nav);
    width: 240px;
    height: 61px;
-   background: var(--basic-nav);
 }
 
 .services__item a {
    display: inline-block;
+   
    color: var(--basic-white);
-   padding: 13px 0px 17.5px 22px;
+   padding: 13px 40px 17.5px 22px;
 }
 
 .services__item--active {
@@ -1012,26 +1034,16 @@ a {
 }
 
 .services__description {
-   width: 619px;
-   height: 283px;
-   margin-left: 80px;
    position: relative;
 }
 
 .services__description-item {
-   width: 300px;
-   height: 99px;
-}
-
-.services__description::after {
-   content: "";
-   background: url("../img/gazelle.png") no-repeat;
-   position: absolute;
-   width: 468px;
-   height: 261px;
+   background: url("../img/gazelle.png")no-repeat;
    right: 0;
+   left: 0;
    bottom: 0;
 }
+
 
 .services__description-subtitle {
    font-weight: 400;
@@ -1048,10 +1060,6 @@ a {
    display: none;
 }
 
-.services__description-item--active {
-   width: 300px;
-   height: 99px;
-}
 
 
 /*===================== Delivery ======================
