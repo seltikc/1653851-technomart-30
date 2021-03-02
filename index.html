@@ -23,8 +23,13 @@
           <img class="header__main-img" src="img/logo.svg" width="108" height="18" alt="Техномарт">
         </a>
         <form class="form-search search" action="https://echo.htmlacademy.ru" method="post">
-          <label for="name"></label>
-          <input type="search" name="search" placeholder="Поиск:">
+
+        <input type="search" name="search" placeholder="Поиск:">
+        <label class="search__icon" for="name">
+          <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"/>
+          </svg>
+        </label>
         </form>
 
         <div class="header__link">
@@ -103,7 +108,7 @@
           <img class="advantages-slider__img" src="img/men.jpg" width="620" height="266" alt="Мужчина с перфоратором">
           <a class="advantages-slider__btn button" href="#">открыть каталог</a>
         </div>
-        <div class="slider-bullet visually-hidden">
+        <div class="slider-bullet">
           <button class="slider-bullet__btn" aria-label="Первый слайд"></button>
           <button class="slider-bullet__btn slider-bullet__btn--active" aria-label="Второй слайд"></button>
         </div>
@@ -235,21 +240,20 @@
           </ul>
 
           <div class="services__description">
-            <div class="services__description-item services__description-item--active">
+            <div class="services__description-item services__description-item—delivery services__description-item--active">
               <h2 class="services__description-subtitle">Доставка</h2>
               <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-                бесплатно!</p>
-              <p class="services__text">Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
             </div>
 
-            <div class="services__description-item services__description-item--none">
+            <div class="services__description-item  services__description-item—garanty">
               <h2 class="services__description-subtitle">Гарантия</h2>
               <p class="services__text">Если купленный у нас товар поломается или заискрит, а также в случае пожара,
                 спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший
                 товар на новый. Дом уж восстановите как-нибудь сами.</p>
             </div>
 
-            <div class="services__description-item services__description-item--none">
+            <div class="services__description-item services__description-item—credit">
               <h2 class="services__description-subtitle">Кредит</h2>
               <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
               </p>
@@ -325,7 +329,7 @@
 
     <div class="footer-social-bg">
       <div class="footer-social-bg__content wrapper">
-        <p class="footer__text">&#169; 2010–2019 Компания «Техномарт»Все права защищены</p>
+        <p class="footer__text">&#169; 2010–2019 Компания «Техномарт» Все права защищены</p>
         <ul class="social list-reset">
           <li class="social__item social__item--vk"><a href="#"></a></li>
           <li class="social__item social__item--fb"><a href="#"></a></li>
