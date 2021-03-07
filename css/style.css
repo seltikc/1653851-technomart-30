@@ -616,7 +616,8 @@ input[type="search"]:focus ~ .search__icon svg {
    position: relative;
 }
 
-.advantages-slider::before {
+.advantages-slider::before,
+.advantages-slider::after {
    content: "";
    width: 22px;
    height: 40px;
@@ -624,16 +625,13 @@ input[type="search"]:focus ~ .search__icon svg {
    background: url('../img/icon/icon-left.svg');
    top: 125px;
    left: 24px;
+   z-index: 5;
 }
 
 .advantages-slider::after {
-   content: "";
-   width: 22px;
-   height: 40px;
-   position: absolute;
-   background: url('../img/icon/icon-right.svg');
-   top: 125px;
+   left: auto;
    right: 24px;
+   transform: rotate(180deg);
 }
 
 
@@ -924,7 +922,7 @@ input[type="search"]:focus ~ .search__icon svg {
    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.popular__item:active {
+.popular__item:focus {
    opacity: 0.5;
 }
 
@@ -1124,12 +1122,16 @@ input[type="search"]:focus ~ .search__icon svg {
 
 /*===================== Delivery ======================
 ======================================================= */
+
+
+
 .delivery {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    gap: 179px;
    padding-bottom: 70px;
 }
+
 
 .delivery__subtitle {
    font-weight: 400;
@@ -1294,6 +1296,7 @@ input[type="search"]:focus ~ .search__icon svg {
 }
 
 .social__item {
+   display: block;
    padding: 11.5px 22px;
    width: 44px;
    height: 44px;
@@ -1741,18 +1744,28 @@ input[type="search"]:focus ~ .search__icon svg {
    left: 0;
    color: var(--basic-black);
    background-position: 0 0;
+   display: none;
 }
+
+.feeldback-show {
+   display: block;
+   display: grid;
+}
+
 
 .feeldback-form {
    position: relative;
    bottom:auto;
    width: 620px;
-   min-height: 430px;
+   height: auto;
    margin: 0 auto;
-   padding: 46px 80px 0px 80px;
    background: var(--basic-white);
    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
    align-items:center;
+}
+
+.feeldback-container {
+   padding: 46px 80px 36px 80px;
 }
 
 .feeldback-form__block {
@@ -1830,19 +1843,20 @@ input[type="search"]:focus ~ .search__icon svg {
 .form-button {
    position: relative;
    background: #F4F4F4;
-   height: 112px;
    width: 100%;
-   padding-top: 37px;
+   padding: 37px 0px 37px 0px;
+   text-align: center;
 }
 
 .modal-close {
    position: absolute;
-   right: 0;
-   top: 20px;
+   top: 21px;
+   right: 11px;
    width: 20px;
-   height: 20px;
-   border: none;
+   height:  20px;
    cursor: pointer;
+   background: none;
+   border: none;
 }
 
 .modal-close::before,
@@ -1851,8 +1865,8 @@ input[type="search"]:focus ~ .search__icon svg {
    position: absolute;
    width: 20px;
    height: 3px;
-   left: -30px;
-   top: 10px;
+   right: 0;
+   top: 8px;
    background: var(--basic-red);
 }
 
@@ -1865,6 +1879,7 @@ input[type="search"]:focus ~ .search__icon svg {
 }
 
 .form-botton__send {
+   display: inline-block;
    color: var(--basic-white);
    font-family: "PT Sans", "Arial", sans-serif;
    font-weight: 400;
@@ -1878,7 +1893,7 @@ input[type="search"]:focus ~ .search__icon svg {
 
    padding: 11px 0px 9px 0px ;
    
-   width: 100%;
+   width: 460px;
    transition:  0.2s linear;
 }
 
