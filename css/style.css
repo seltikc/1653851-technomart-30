@@ -1906,3 +1906,24 @@ input[type="search"]:focus ~ .search__icon svg {
    background: #BA2732;
 }
 
+/*===================== modal-map =====================
+======================================================= */
+
+.modal-map {
+   width: 943px;
+   height: 449px;
+   position: fixed;
+   top: 200px;
+   left: 450px;
+   margin: 0 auto;
+   bottom:auto;
+   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
+   background-position: 0 0;
+   display: none;
+}
+
+.modal-map-show{
+   display: block;
+   display: grid;
+}
+

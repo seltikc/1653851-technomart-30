@@ -265,7 +265,7 @@
     </section>
     <!--====================/.Сервисы доставка-->
 
-    <section class="delivery wrapper feeldback-show">
+    <section class="delivery wrapper feeldback-show modal-map-show">
       <div class="delivery__content">
         <h2 class="delivery__subtitle">Компания «Техномарт»</h2>
         <p class="delivery__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
@@ -283,9 +283,10 @@
       <div class="delivery__contacts">
         <h2 class="delivery__subtitle">Контакты</h2>
         <p class="delivery__text">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-        <div class="delivery__img"><img src="img/map.jpg" width="300" height="158" alt="Карта"></div>
-        <a class="button delivery__btn" href="#">Заблудились? Напишите нам!</a>
-      </div>
+        <div class="delivery__img">
+          <a class="delivery__img-map" href=""><img src="img/map.jpg" width="300" height="158" alt="Карта"></a></div>
+          <a class="button delivery__btn" href="#">Заблудились? Напишите нам!</a>
+        </div>
 
     </section>
     <!--====================/.Контакты Техномаркета-->
@@ -372,7 +373,7 @@
             <textarea id="text-message" type="email" name="user-message" placeholder="В свободной форме"></textarea>
           </div>
           
-          <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+          <button class="modal-close modal-close__map" type="button"><span class="visually-hidden">Закрыть</span></button>
         </div>
 
           <div class="form-button">
@@ -382,13 +383,14 @@
     </form>
   </section>
 
-  <section class="modal modal-map">
+  <section class="modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <iframe src="" frameborder="0"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.3755165410314!2d30.32166771070898!3d59.93875569923744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1615218810497!5m2!1sru!2sru" width="943" height="449" style="border:0;" allowfullscreen="" loading="lazy" title="Офис компании"></iframe>
     <button type="button" aria-label="Закрыть"></button>
   </section>
 
-  <script src="js/app.js"></script>
+  <script src="js/popap.js"></script>
+  <script src="js/map.js"></script>
 </body>
 
 </html>

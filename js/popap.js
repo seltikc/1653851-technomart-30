@@ -12,3 +12,4 @@ btnClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     modal.classList.remove("feeldback-show");
 });
+
