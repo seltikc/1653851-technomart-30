@@ -27,23 +27,28 @@
 
         <div class="header__link">
           <a class="header__link-item header__link-item--book" href="#">Закладки 0:</a>
-          <a class="header__link-item header__link-item--basket" href="#">Корзина 0:</a>
+          <a class="header__link-item header__link-item--basket header__link-item---red" href="#">Корзина 10:</a>
           <a class="header__link-item header__link-item--green" href="#">Оформить заказ</a>
         </div>
       </div>
     </div>
 
     <section class="header__contacts wrapper">
-      <h1 class="header__contacts-title">Интернет-магазин строительных материалов <br> и инструментов для ремонта</h1>
+      <h2 class="header__contacts-title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h2>
       <div class="header__contacts-address">
         <a class="header__contacts-icon header__contacts-tel " href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
 
-      <ul class="header__regist list-reset">
-        <li class="header__regist-item header__regist-item--login"><a href="#">Войти</a></li>
-        <li class="header__regist-item header__regist-item--registration"><a href="#">Регистрация</a></li>
-      </ul>
+      <div class="account">
+        <p class="account__name">
+          <a class="account__user" href="#">Равшан Джамшутович</a>
+        </p>
+        <ul class="account-block list-reset">
+          <li class="account-block__orders"><a href="">Мой заказы</a></li>
+          <li><a class="account-block__office" href="">Личный кабинет</a></li>
+        </ul>
+      </div>
     </section>
 
     <nav class="nav wrapper">
@@ -65,7 +70,7 @@
       <div class="wrapper">
         <div class="bread-crumbs">
           <ul class="bread-crumbs__list list-reset">
-            <li class="bread-crumbs__item bread-crumbs__icon"><a href="#"></a></li>
+            <li class="bread-crumbs__icon"><a href="index.html"></a></li>
             <li class="bread-crumbs__item"><a href="#">Каталог</a></li>
             <li class="bread-crumbs__item"><a href="#">Инструмент</a></li>
             <li class="bread-crumbs__item"><a href="#">Перфораторы</a></li>
@@ -160,20 +165,14 @@
       <section class="sorting wrapper">
         <h2 class="sorting__subtitle">Сортировка:</h2>
         <div class="sorting-wrap">
-          <a class="sorting-wrap__link" href="#">По цене</a>
+          <a class="sorting-wrap__link sorting-wrap__link--active" href="#">По цене</a>
           <a class="sorting-wrap__link" href="#">По типу</a>
           <a class="sorting-wrap__link" href="#">По функционалу</a>
           <div class="arrow">
-            <a class="arrow__war arrow__war--top" href="#">
-              <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.66241 0L11.1624 10L0.162415 10" fill="#C5C5C5"/>
-              </svg>                
+            <a class="arrow__war arrow__war--active" href="#">           
             </a>
-  
             <a class="arrow__war arrow__war--bottom" href="#">
-              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 10L0 0H11" fill="#C5C5C5"/>
-              </svg>
+
             </a>
           </div>
         </div>
@@ -184,13 +183,13 @@
           <ul class="popular__list list-reset">
             <li class="popular__item">
               <div class="popular__image">
-                <img src="img/perforator/bfg6000.jpg" width="220" height="160" alt="Перфоратор bfg6000">
-              </div>
+                <img class="popular__image-none" src="img/perforator/bfg6000.jpg" width="220" height="160" alt="Перфоратор bfg6000">
               <div class="popular__link">
-                <a class="popular__link-item" href="#">Купить</a>
+                <a class="popular__link-item popular__link-item--green" href="#">Купить</a>
                 <a class="popular__link-item popular__link-item--bookmarks" href="#">В закладки</a>
               </div>
-              <div class="popular__wrap">
+              </div>
+              <div class="popular__content">
                 <h3 class="popular__subtitle">Перфоратор BOSCH BGF 6000</h3>
                 <del class="popular__price">30500 Р.</del> <!--Потом можно зачеркнуть стилем-->
                 <a class="popular__btn" href="#">25500 Р.</a> 
@@ -199,43 +198,43 @@
 
             <li class="popular__item">
               <div class="popular__image">
-                <img src="img/perforator/bfg6000.jpg" width="220" height="160" alt="Перфоратор bfg6000">
-              </div>
+                <img class="popular__image-none" src="img/perforator/bfg6000.jpg" width="220" height="160" alt="Перфоратор bfg6000">
               <div class="popular__link">
-                <a class="popular__link-item" href="#">Купить</a>
+                <a class="popular__link-item popular__link-item--green" href="#">Купить</a>
                 <a class="popular__link-item popular__link-item--bookmarks" href="#">В закладки</a>
               </div>
-              <div class="popular__wrap">
+              </div>
+              <div class="popular__content">
                 <h3 class="popular__subtitle">Перфоратор BOSCH BGF 6000</h3>
                 <del class="popular__price">30500 Р.</del> <!--Потом можно зачеркнуть стилем-->
                 <a class="popular__btn" href="#">25500 Р.</a> 
               </div>   
             </li>
 
-            <li class="popular__item">
+            <li class="popular__item popular__new">
               <div class="popular__image">
-                <img src="img/perforator/bfg6000.jpg" width="220" height="160" alt="Перфоратор bfg6000">
-              </div>
+                <img class="popular__image-none" src="img/perforator/bfg6000.jpg" width="220" height="160" alt="Перфоратор bfg6000">
               <div class="popular__link">
-                <a class="popular__link-item" href="#">Купить</a>
+                <a class="popular__link-item popular__link-item--green" href="#">Купить</a>
                 <a class="popular__link-item popular__link-item--bookmarks">В закладки</a>
               </div>
-              <div class="popular__wrap">
+              </div>
+              <div class="popular__content">
                 <h3 class="popular__subtitle">Перфоратор BOSCH BGF 6000</h3>
                 <del class="popular__price">30500 Р.</del> <!--Потом можно зачеркнуть стилем-->
                 <a class="popular__btn" href="#">25500 Р.</a> 
               </div>   
             </li>
 
-            <li class="popular__item">
+            <li class="popular__item popular__new">
               <div class="popular__image">
-                <img src="img/perforator/bfg3000.jpg" width="220" height="160" alt="Перфоратор bfg3000">
-              </div>
+                <img class="popular__image-none" src="img/perforator/bfg3000.jpg" width="220" height="160" alt="Перфоратор bfg3000">
               <div class="popular__link">
-                <a class="popular__link-item" href="#">Купить</a>
+                <a class="popular__link-item popular__link-item--green" href="#">Купить</a>
                 <a class="popular__link-item popular__link-item--bookmarks" href="#">В закладки</a>
               </div>
-              <div class="popular__wrap">
+              </div>
+              <div class="popular__content">
                 <h3 class="popular__subtitle">Перфоратор BOSCH BGF 3000</h3>
                 <del class="popular__price">22500 Р.</del> <!--Потом можно зачеркнуть стилем-->
                 <a class="popular__btn" href="#">15500 Р.</a> 
@@ -244,43 +243,43 @@
 
             <li class="popular__item">
               <div class="popular__image">
-                <img src="img/perforator/bfg6000.jpg" width="220" height="160" alt="Перфоратор bfg6000">
-              </div>
+                <img class="popular__image-none" src="img/perforator/bfg6000.jpg" width="220" height="160" alt="Перфоратор bfg6000">
               <div class="popular__link">
-                <a class="popular__link-item" href="#">Купить</a>
+                <a class="popular__link-item popular__link-item--green" href="#">Купить</a>
                 <a class="popular__link-item popular__link-item--bookmarks" href="#">В закладки</a>
               </div>
-              <div class="popular__wrap">
+              </div>
+              <div class="popular__content">
                 <h3 class="popular__subtitle">Перфоратор BOSCH BGF 6000</h3>
                 <del class="popular__price">30500 Р.</del> <!--Потом можно зачеркнуть стилем-->
                 <a class="popular__btn" href="#">25500 Р.</a> 
               </div>   
             </li>
 
-            <li class="popular__item">
+            <li class="popular__item popular__new">
               <div class="popular__image">
-                <img src="img/perforator/bfg2000.jpg" width="220" height="160" alt="Перфоратор bfg2000">
-              </div>
+                <img class="popular__image-none" src="img/perforator/bfg2000.jpg" width="220" height="160" alt="Перфоратор bfg2000">
               <div class="popular__link">
-                <a class="popular__link-item" href="#">Купить</a>
+                <a class="popular__link-item popular__link-item--green" href="#">Купить</a>
                 <a class="popular__link-item popular__link-item--bookmarks" href="#">В закладки</a>
               </div>
-              <div class="popular__wrap">
+              </div>
+              <div class="popular__content">
                 <h3 class="popular__subtitle">Перфоратор BOSCH BGF 2000</h3> 
                 <del class="popular__price">22500 Р.</del> <!--Потом можно зачеркнуть стилем-->
                 <a class="popular__btn" href="#">12500 Р.</a>
               </div>
             </li>
 
-            <li class="popular__item">
+            <li class="popular__item popular__new">
               <div class="popular__image">
-                <img src="img/perforator/bfg3000.jpg" width="220" height="160" alt="Перфоратор bfg3000">
-              </div>
+                <img class="popular__image-none" src="img/perforator/bfg3000.jpg" width="220" height="160" alt="Перфоратор bfg3000">
               <div class="popular__link">
-                <a class="popular__link-item" href="#">Купить</a>
+                <a class="popular__link-item popular__link-item--green" href="#">Купить</a>
                 <a class="popular__link-item popular__link-item--bookmarks" href="#">В закладки</a>
               </div>
-              <div class="popular__wrap">
+              </div>
+              <div class="popular__content">
                 <h3 class="popular__subtitle">Перфоратор BOSCH BGF 3000</h3>
                 <del class="popular__price">22500 Р.</del> <!--Потом можно зачеркнуть стилем-->
                 <a class="popular__btn" href="#">15500 Р.</a> 
@@ -289,28 +288,28 @@
 
             <li class="popular__item">
               <div class="popular__image">
-                <img src="img/perforator/bfg6000.jpg" width="220" height="160" alt="Перфоратор bfg6000">
-              </div>
+                <img class="popular__image-none" src="img/perforator/bfg6000.jpg" width="220" height="160" alt="Перфоратор bfg6000">
               <div class="popular__link">
-                <a class="popular__link-item" href="#">Купить</a>
+                <a class="popular__link-item popular__link-item--green" href="#">Купить</a>
                 <a class="popular__link-item popular__link-item--bookmarks" href="#">В закладки</a>
               </div>
-              <div class="popular__wrap">
+              </div>
+              <div class="popular__content">
                 <h3 class="popular__subtitle">Перфоратор BOSCH BGF 6000</h3>
                 <del class="popular__price">30500 Р.</del> <!--Потом можно зачеркнуть стилем-->
                 <a class="popular__btn" href="#">25500 Р.</a> 
               </div>   
             </li>
 
-            <li class="popular__item">
+            <li class="popular__item popular__new">
               <div class="popular__image">
-                <img src="img/perforator/bfg2000.jpg" width="220" height="160" alt="Перфоратор bfg2000">
-              </div>
+                <img class="popular__image-none" src="img/perforator/bfg2000.jpg" width="220" height="160" alt="Перфоратор bfg2000">
               <div class="popular__link">
-                <a class="popular__link-item" href="#">Купить</a>
+                <a class="popular__link-item popular__link-item--green" href="#">Купить</a>
                 <a class="popular__link-item popular__link-item--bookmarks" href="#">В закладки</a>
               </div>
-              <div class="popular__wrap">
+              </div>
+              <div class="popular__content">
                 <h3 class="popular__subtitle">Перфоратор BOSCH BFG 2000</h3> 
                 <del class="popular__price">22500 Р.</del> <!--Потом можно зачеркнуть стилем-->
                 <a class="popular__btn" href="#">12500 Р.</a>
@@ -319,7 +318,7 @@
           </ul>
 
           <ul class="pagination list-reset">
-            <li class="pagination__page"><a href="#">1</a></li>
+            <li class="pagination__page pagination__page--active"><a href="#">1</a></li>
             <li class="pagination__page"><a href="#">2</a></li>
             <li class="pagination__page"><a href="#">3</a></li>
             <li class="pagination__page"><a href="#">Следующая</a></li>
