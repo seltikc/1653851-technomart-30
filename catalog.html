@@ -179,9 +179,9 @@
 
       </section> <!--==================== Сортировка-->
 
-      <section class="popular popular__product popular__grid wrapper">
+      <section class="popular popular__product popular__grid wrapper cart-popup-show">
           <ul class="popular__list list-reset">
-            <li class="popular__item">
+            <li class="popular__item ">
               <div class="popular__image">
                 <img class="popular__image-none" src="img/perforator/bfg6000.jpg" width="220" height="160" alt="Перфоратор bfg6000">
               <div class="popular__link">
@@ -392,7 +392,21 @@
       </div>
   
     </footer>
+
+    <div class="cart-popup-container">
+      <section class="product-cart">
+        <div class="order-added">
+          <p>Товар добавлен в корзину!</p>
+        </div>
+        <div class="button-popup">
+          <a class="button popup-button-buy" href="#">Оформить заказ</a>
+          <a class="button popup-button-continue" href="#">Продолжить покупки</a>
+        </div>
+        <button class="modal-close card-close-button"></button>
+      </section>
+    </div>
     <!--====================/.Подвал сайта-->
+    <script src="js/order.js"></script>
   </body>
   
   </html>
