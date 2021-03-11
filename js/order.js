@@ -1,14 +1,17 @@
 const popapCart = document.querySelector(".cart-popup-container");
-const cartOpen = document.querySelector(".popular__link-item--green");
+const cartOpen = document.querySelectorAll(".popular__link-item--green");
 const cartClose = document.querySelector(".card-close-button");
 
-cartOpen.addEventListener("click", function (evt) { 
+
+cartOpen.forEach(function(item) {
+    item.addEventListener('click', function(evt) {
     evt.preventDefault();
-    popapCart.classList.add("cart-popup-show");
-});
+    popapCart.classList.toggle("cart-popup-show");})
+    });
+
 
 cartClose.addEventListener("click", function (evt) { 
     evt.preventDefault();
-    popapCart.classList.remove("modal-map-show");
+    popapCart.classList.remove("cart-popup-show");
 });
 
