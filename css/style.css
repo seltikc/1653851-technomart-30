@@ -15,7 +15,6 @@
    .page-body {
       margin: 0;
       padding: 0;
-   
       font-weight: 400;
       font-size: 18px;
       line-height: 24px;
@@ -35,9 +34,8 @@
    }
    
    .list-reset {
-      margin: 0;
-      padding: 0;
-   
+      margin: 0px;
+      padding: 0px;
       list-style: none;
    }
    
@@ -726,7 +724,7 @@
       height: 40px;
       position: absolute;
       background: url('../img/icon/icon-left.svg');
-      top: 125px;
+      top: 121px;
       left: 24px;
       z-index: 5;
    }
@@ -826,18 +824,13 @@
       display: inline-block;
       width: 192px;
       min-height: 38px;
-   
-      padding-top: 11px;
-   
-   
+      padding-top: 10px;
       font-size: 14px;
       line-height: 18px;
       text-align: center;
       color: var(--basic-white);
-   
       text-transform: uppercase;
       text-decoration: none;
-   
       background-color: var(--basic-red);
    }
    
@@ -847,19 +840,15 @@
       min-height: 38px;
       position: absolute;
       left: 24px;
-      bottom: 27px;
-      
+      bottom: 34px;
       padding-top: 10px;
-   
       font-size: 14px;
       line-height: 18px;
       text-align: center;
       color: var(--basic-white);
-   
       text-transform: uppercase;
       text-decoration: none;
       transition: 0.2s linear;
-   
       background-color: var(--basic-red);
    }
    
@@ -890,18 +879,16 @@
    
    .popular__btn {
       display: inline-block;
-   
       background: url("../img/icon/red-btn.svg") no-repeat;
       min-width: 141px;
       height: 38px;
-   
       font-weight: 700;
       font-size: 17px;
       font-family: "PT Sans", "Arial", sans-serif;
       color: var(--basic-white);
       text-align: center;
-      padding-top: 6px;
-      margin-bottom: 21px;
+      padding: 8px 7px 0px 0px;
+      margin-bottom: 22px;
       margin-left: 45px;
    }
    
@@ -948,11 +935,11 @@
    
    .popular__list {
       font-family: "PT Sans", "Arial", sans-serif;
-      padding-top: 30px;
+      padding-top: 14px;
       display: grid;
       grid-template-columns: repeat(4, 220px);
       gap: 20px;
-      padding-bottom: 48px;
+      padding-bottom: 66px;
    }
    
    .popular__link {
@@ -1092,7 +1079,7 @@
       text-align: center;
       color: var(--basic-black);
       margin: 0;
-      padding-top: 20px;
+      padding-top: 34px;
    }
    
    .popular__price {
@@ -1102,7 +1089,7 @@
       line-height: 18px;
       text-align: center;
       color: #a9a9a9;
-      padding: 6px 0px 13px 0px;
+      padding: 7px 3px 13px 0px;
    }
    
    /*===================== Services ======================
@@ -1111,7 +1098,7 @@
    
    .services {
       background-color: #f1f5f7;
-      padding-bottom: 19px;
+      padding-bottom: 5px;
    }
    
    .services__inner {
@@ -1128,8 +1115,7 @@
       font-family: "Cuprum", "Arial", sans-serif;
       color: var(--basic-black);
       text-transform: uppercase;
-   
-      padding: 64px 0px 25px 0px;
+      padding: 71px 0px 25px 0px;
       margin: 0;
    }
    
@@ -1142,7 +1128,7 @@
    .services__list {
       font-size: 21px;
       font-family: "Cuprum", "Arial", sans-serif;
-      padding-top: 65px;
+      padding-top: 74px;
    }
    
    .services__list::before {
@@ -1164,9 +1150,8 @@
       display: inline-block;
       width: 240px;
       height: 61px;
-      
       color: var(--basic-white);
-      padding: 13.5px 0px 17.5px 22px;
+      padding: 13px 0px 17px 25px;
    }
    
    .services__item--active {
@@ -1183,12 +1168,13 @@
    
    .services__description-item {
       display: none;
-      padding: 65px 0px 80px 80px;
+      padding: 67px 0px 100px 78px;
    }
    
    .services__description p {
       width: 331px;
       min-height: 122px;
+      padding-left: 2px;
    }
    
    .services__description-item--active {
@@ -1215,11 +1201,11 @@
       font-weight: 400;
       font-size: 30px;
       line-height: 30px;
-      font-family: "PT Sans", "Arial", sans-serif;
+      font-family: "Cuprum", "Arial", sans-serif;
       color: var(--basic-nav);
       text-transform: uppercase;
       margin: 0%;
-      padding-bottom: 30px;
+      padding-bottom: 31px;
    }
    
    
@@ -1253,36 +1239,29 @@
       font-family: "PT Sans", "Arial", sans-serif;
       margin: 0;
    }
-   
+
    .delivery__text-padding {
-      padding-top: 43px;
+      padding-top: 25px;
    }
    
    .delivery__item {
       position: relative;
-      padding: 12px 0px 0px 40px;
+      padding: 6px 0px 4px 37px;
    }
    
    .delivery__item:last-child {
-      margin-bottom: 20px;
-   }
-   
-   .delivery__item:first-child {
-      padding-top: 0;
+      margin-bottom: 17px;
    }
    
    .delivery__item::after {
       content: "";
-   
       display: block;
       width: 25px;
       height: 2px;
-   
       position: absolute;
-   
       background-color: var(--basic-red);
-      bottom: 10px;
-      left: 0;
+      bottom: 16px;
+      left: 0px;
    }
    
    .delivery__content {
@@ -1291,6 +1270,7 @@
    
    .delivery__img {
       padding: 32px 0px 25px 0px;
+      margin-bottom: -7px;
    }
    
    .delivery__btn {
@@ -1326,7 +1306,13 @@
    
    .footer__adress {
       margin: 0;
-      padding-top: 22px;
+      padding-top: 27px;
+      padding-left: 2px;
+      padding-bottom: 1px;
+   }
+
+   .footer__phone {
+      padding-left: 4px;
    }
    
    .footer__content {
@@ -1373,12 +1359,13 @@
    
    .footer-social-bg {
       background: var(--basic-header);
-      padding: 35px 0px 35px 0px;
+      padding: 29px 0px 35px 0px;
    }
    
    .footer-social-bg__content {
       display: flex;
       justify-content: space-between;
+      align-items: center;
    } 
    
    .footer__text {
@@ -1396,6 +1383,7 @@
    .social {
       display: flex;
       justify-content: space-between;
+      padding-left: 82px;
    }
    
    .social__item {
@@ -1439,6 +1427,18 @@
       transition: 0.2s linear;
    }
    
+   .footer__wrap {
+      display: flex;
+      justify-content: flex-end;
+   }
+
+   .footer__link {
+      margin-left: 38px;
+      margin-top: 2px;
+      margin-right: 14px;
+   }
+
+
    .footer__link a {
       font-size: 16px;
       line-height: 18px;
