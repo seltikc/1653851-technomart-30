@@ -161,8 +161,9 @@
       padding: 10px 0px 9px 43px;
    }
    
-   .header__link-item---red {
+   .header__link-item--red {
       background: var(--basic-red);
+      display: block;
    }
    
    
@@ -258,7 +259,6 @@
    
    .header__contacts-p {
       margin: 0;
-      padding-top: -14px;
       margin-left: 23px;
       padding-bottom: 4px;
    }
@@ -407,7 +407,7 @@
       min-height: 45px;
       background-color: var(--basic-white);
       margin: 0;
-      margin-bottom: 10px;
+      margin-bottom: 3px;
    }
    
    .account__user {
@@ -420,9 +420,8 @@
       position: absolute;
       width: 20px;
       height: 18px;
-      left: 20px;
-      top: 15px;
-   
+      left: 16px;
+      top: 12px;
       transition: 0.2s linear;
    }
    
@@ -436,9 +435,8 @@
       position: absolute;
       width: 20px;
       height: 17px;
-      right: 25px;
-      top: 15px;
-   
+      right: 17px;
+      top: 13px;
       transition: 0.2s linear;
    }
    
@@ -458,14 +456,14 @@
    .account-block {
       display: flex;
       justify-content: space-around;
-      padding: 0px 10px 0px 0px;
-      margin-bottom: 20px;
+      padding: 0px 27px 0px 0px;
+      margin-bottom: 4px;
    }
    
    .account-block a {
       color: var(--basic-black);
-      font-size: 18px;
-      line-height: 24px;
+      font-size: 16px;
+      line-height: 18px;
       font-weight: 400;
    
       transition: 0.2s linear;
@@ -477,7 +475,7 @@
    
    
    .account-block__orders  {
-      padding-left: 20px;
+      padding-left: 27px;
    }
    
    .account-block__office {
@@ -486,14 +484,13 @@
    
    .account-block__office::after {
       content: "";
-      width: 6px;
-      height: 6px;
+      width: 5px;
+      height: 5px;
       position: absolute;
       background: var(--basic-nav) no-repeat;
       border-radius: 50%;
-      right: 130px;
-      top: 8px;
-   
+      right: 119px;
+      top: 7px;
    }
    
    /*================ Header-Navigation ==================
@@ -1491,6 +1488,7 @@
       align-items:center;
       margin: 17px 0 19px;
       position: relative;
+      padding-left: 6px;
    }
    
    .bread-crumbs__icon {
@@ -1498,13 +1496,13 @@
    }
    
    .bread-crumbs__icon a {
-      background: url("../img/icon/icon-home.svg") no-repeat; 
+      background: url("../img/icon/icon-home.svg") no-repeat;
       display: inline-block;
       width: 14px;
       height: 12px;
       position: absolute;
-      bottom: 6px;
-      margin-top: 70px;
+      bottom: 5px;
+      left: 0;
    }
    
    .bread-crumbs__item {
@@ -1515,8 +1513,8 @@
       content: "";
       position: absolute;
       display: inline-block;
-      top: 6px;
-      left: 0;
+      top: 7px;
+      left: -5px;
       width: 8px;
       height: 12px;
       background-image: url("../img/icon/icon-right-small.svg");
@@ -1525,15 +1523,13 @@
    }
    
    
-   .bread-crumbs__item a{
-      padding: 0px 20px 0px 20px;
-   }
-   
    .bread-crumbs__item a {
       font-size: 13px;
       line-height: 18px;
       color: var(--basic-black);
       text-transform: uppercase;
+      font-family: "PT Sans", "Arial", sans-serif;
+      padding: 0px 21px 0px 20px;
    }
    
    .goods {
