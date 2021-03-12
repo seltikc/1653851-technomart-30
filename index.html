@@ -131,7 +131,7 @@
         <h2>Популярные товары:</h2>
         <a class="button" href="#">Все популярные товары</a>
       </div>
-      <ul class="popular__list list-reset">
+      <ul class="popular__list list-reset ">
         <li class="popular__item">
           <div class="popular__image">
             <img class="popular__image-none" src="img/perforator/bfg9000.jpg" width="220" height="160" alt="Перфоратор bfg9000">
@@ -246,14 +246,14 @@
                 бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
             </div>
 
-            <div class="services__description-item  services__description-item—garanty">
+            <div class="services__description-item services__description-item--garanty">
               <h2 class="services__description-subtitle">Гарантия</h2>
               <p class="services__text">Если купленный у нас товар поломается или заискрит, а также в случае пожара,
                 спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший
                 товар на новый. Дом уж восстановите как-нибудь сами.</p>
             </div>
 
-            <div class="services__description-item services__description-item—credit">
+            <div class="services__description-item services__description-item--credit">
               <h2 class="services__description-subtitle">Кредит</h2>
               <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
               </p>
@@ -265,7 +265,7 @@
     </section>
     <!--====================/.Сервисы доставка-->
 
-    <section class="delivery wrapper feeldback-show modal-map-show">
+    <section class="delivery wrapper">
       <div class="delivery__content">
         <h2 class="delivery__subtitle">Компания «Техномарт»</h2>
         <p class="delivery__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
@@ -280,7 +280,7 @@
         </ul>
         <a class="button delivery__btn-1" href="#">Подробнее о компании</a>
       </div>
-      <div class="delivery__contacts">
+      <div class="delivery__contacts modal-show">
         <h2 class="delivery__subtitle">Контакты</h2>
         <p class="delivery__text">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
         <div class="delivery__img">
@@ -354,7 +354,7 @@
 
   <!--====================/.Подвал сайта-->
 
-  <section class="feeldback">
+  <div class="feeldback">
     <h2 class="visually-hidden">Форма заказа товара</h2>
     <form class="feeldback-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="feeldback-container">
@@ -371,7 +371,7 @@
         </div>
 
           <div class="feeldback-form__fields">
-            <label class="visually-hidden" for="text-message">Текст письма:</label>
+            <label for="text-message">Текст письма:</label>
             <textarea id="text-message" type="email" name="user-message" placeholder="В свободной форме"></textarea>
           </div>
           
@@ -383,7 +383,7 @@
           </div>
 
     </form>
-  </section>
+  </div>
 
   <div class="modal-container">
   <section class="modal-map">
@@ -393,8 +393,19 @@
   </section>
   </div>
 
-  <script src="js/popap.js"></script>
-  <script src="js/map.js"></script>
+  <div class="cart-popup-container">
+    <section class="product-cart">
+      <div class="order-added">
+        <p>Товар добавлен в корзину!</p>
+      </div>
+      <div class="button-popup">
+        <a class="button popup-button-buy" href="#">Оформить заказ</a>
+        <a class="button popup-button-continue" href="#">Продолжить покупки</a>
+      </div>
+      <button class="modal-close card-close-button"></button>
+    </section>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
