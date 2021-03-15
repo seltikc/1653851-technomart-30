@@ -994,13 +994,13 @@
       border: 1px solid #EAEAEA;
    }
    
-   .popular__manufacturers .popular__item {
+   .popular-manufacturers .popular__item {
       display: block;
       width: 220px;
       height: 145px;
    }
 
-   .popular__manufacturers .popular__title {
+   .popular-manufacturers .popular__title {
       padding-right: 19px;
    }
    
@@ -1779,7 +1779,7 @@
       margin-left: 25px;
    }
    
-   .lable__block {
+   .lable-block {
       margin-top: 8px;
       margin-bottom: 30px;
    }
@@ -2117,7 +2117,7 @@
       transform: rotate(-45deg);
    }
    
-   .form-botton__send {
+   .form-botton-send {
       display: inline-block;
       color: var(--basic-white);
       font-family: "PT Sans", "Arial", sans-serif;
@@ -2136,12 +2136,12 @@
       transition:  0.2s linear;
    }
    
-   .form-botton__send:hover {
+   .form-botton-send:hover {
       background: #CA2C37;
    }
    
-   .form-botton__send:active,
-   .form-botton__send:focus {
+   .form-botton-send:active,
+   .form-botton-send:focus {
       background: #BA2732;
    }
    
