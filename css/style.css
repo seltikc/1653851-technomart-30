@@ -274,7 +274,7 @@
       padding-bottom: 13px;
    }
    
-   .header__contacts-address a {
+   .header__contacts-icon {
       font-weight: 700;
       font-size: 21px;
       line-height: 30px;
@@ -304,6 +304,10 @@
       position: relative;
    }
    
+   .header__contacts-address2 {
+      margin-left: 18px;
+   }
+
    .header__contacts-address p {
       font-size: 14px;
       line-height: 24px;
@@ -934,6 +938,10 @@
       font-family: "PT Sans", "Arial", sans-serif;
       gap: 20px;
       grid-template-columns: repeat(4, 220px);
+   }
+
+   .popular__list2 {
+      padding-bottom: 48px;
    }
    
    .popular__link {
@@ -1641,6 +1649,10 @@
       line-height: 30px;
       text-transform: uppercase;
    }
+
+   .fieldset__title2 {
+      padding: 5px 0px 19px 0px;
+   }
    
    .fieldset__item label {
       display: block;
@@ -1887,6 +1899,14 @@
       display: flex;
       flex-wrap: wrap;
    }
+
+   .pagination li {
+      padding-left: 10px;
+   }
+
+   .pagination li:first-child {
+      padding: 0;
+   }
    
    .pagination__page a {
       display: block;
@@ -1937,7 +1957,7 @@
    .perforator-bg {
       background-color: #f1f5f7;
       padding-top: 64px;
-      margin-top: 10px;
+      margin-top: 35px;
    }
    
    .perforator-bg__subtitle {
