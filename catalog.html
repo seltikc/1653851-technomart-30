@@ -9,7 +9,7 @@
   <link rel="manifest" href="favicons.webmanifest">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/min.style.css">
   
   <title>Интернет-магазин Техномарт</title>
 </head>
@@ -23,7 +23,7 @@
         </a>
         <form class="form-search search" action="https://echo.htmlacademy.ru" method="post">
 
-        <input type="search" name="Search" id="search" placeholder="Поиск:">
+        <input type="search" name="Search" id="search" placeholder="Поиск:" tabindex="0">
         <label class="search__icon" for="search">
           <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"/>
@@ -32,9 +32,9 @@
         </form>
 
         <div class="header__link">
-          <a class="header__link-item header__link-item--book" href="#">Закладки: 0</a>
-          <a class="header__link-item header__link-item--basket header__link-item--red " href="#">Корзина: 0</a>
-          <a class="header__link-item header__link-item--green" href="#">Оформить заказ</a>
+          <a class="header__link-item header__link-item--book" href="#" tabindex="0">Закладки: 0</a>
+          <a class="header__link-item header__link-item--basket header__link-item--red" tabindex="0" href="#">Корзина: 0</a>
+          <a class="header__link-item header__link-item--green" href="#" tabindex="0">Оформить заказ</a>
         </div>
       </div>
     </div>
@@ -106,8 +106,8 @@
               <div class="fieldset__scale">
                 <div class="fieldset__bar"></div>
               </div>
-              <div class="fieldset__toggle fieldset__toggle--min"></div>
-              <div class="fieldset__toggle fieldset__toggle--max"></div>
+              <div class="fieldset__toggle fieldset__toggle--min" tabindex="0"></div>
+              <div class="fieldset__toggle fieldset__toggle--max" tabindex="0"></div>
             </div>
               <div class="lable-block">
             <label class="lable-text">
@@ -126,28 +126,28 @@
             <ul class="fieldset__list list-reset">
 
               <li class="fieldset__item fieldset__item-checkbox">
-                <input class="fieldset__item-checked visually-hidden" type="checkbox" name="Bosch" id="bosch" checked>
-                <label for="bosch">Bosch</label>
+                <input class="fieldset__item-checked visually-hidden" type="checkbox" name="Bosch" id="bosch" checked> 
+                <label for="bosch" tabindex="0">Bosch</label>
               </li>
 
               <li class="fieldset__item fieldset__item-checkbox">
                 <input class="fieldset__item-checked visually-hidden" type="checkbox" name="Интерскол" id="interskol">
-                <label for="interskol">Интерскол</label>
+                <label for="interskol" tabindex="0">Интерскол</label>
               </li>
 
               <li class="fieldset__item fieldset__item-checkbox">
                 <input class="fieldset__item-checked visually-hidden" type="checkbox" name="Makita" id="makita" checked>
-                <label for="makita">Makita</label>
+                <label for="makita" tabindex="0">Makita</label>
               </li>
 
               <li class="fieldset__item fieldset__item-checkbox">
                 <input class="fieldset__item-checked visually-hidden" type="checkbox" name="DeWalt" id="dewalt">
-                <label for="dewalt">DeWalt</label>
+                <label for="dewalt" tabindex="0">DeWalt</label>
               </li>
 
               <li class="fieldset__item fieldset__item-checkbox">
                 <input class="fieldset__item-checked visually-hidden" type="checkbox" name="Hitachi" id="hitachi">
-                <label class="fieldset__hitachi" for="hitachi">Hitachi</label>
+                <label class="fieldset__hitachi" for="hitachi" tabindex="0">Hitachi</label>
               </li>
 
             </ul>
@@ -158,12 +158,12 @@
             <ul class="fieldset__list list-reset">
               <li class="fieldset__item fieldset__item-radio">
                 <input class="fieldset__item-checked2 visually-hidden" type="radio" name="power" id="battery" value="Аккумуляторные" checked>
-                <label for="battery">Аккумуляторные</label>
+                <label for="battery" tabindex="0">Аккумуляторные</label>
               </li>
 
               <li class="fieldset__item fieldset__item-radio">
                 <input class="fieldset__item-checked2 visually-hidden" type="radio" name="power" id="electric" value="Сетевые">
-                <label for="electric">Сетевые</label>
+                <label for="electric" tabindex="0">Сетевые</label>
               </li>
             </ul>
         </fieldset>
@@ -199,7 +199,7 @@
                 <a class="popular__link-item popular__link-item--bookmarks" href="#">В закладки</a>
               </div>
               </div>
-              <div class="popular__content">
+              <div class="popular__content" tabindex="0">
                 <h3 class="popular__subtitle">Перфоратор BOSCH<br>BFG 6000</h3>
                 <del class="popular__price">30500 Р.</del> <!--Потом можно зачеркнуть стилем-->
                 <a class="popular__btn" href="#">25500 Р.</a> 
@@ -209,7 +209,7 @@
             <li class="popular__item">
               <div class="popular__image">
                 <img class="popular__image-none" src="img/perforator/bfg6000.jpg" width="220" height="160" alt="Перфоратор bfg6000">
-              <div class="popular__link">
+              <div class="popular__link" tabindex="0">
                 <a class="popular__link-item popular__link-item--green" href="#">Купить</a>
                 <a class="popular__link-item popular__link-item--bookmarks" href="#">В закладки</a>
               </div>
@@ -418,7 +418,7 @@
       </section>
     </div>
     <!--====================/.Подвал сайта-->
-    <script src="js/script.js"></script>
+    <script src="js/min.script.js"></script>
   </body>
   
   </html>

@@ -216,6 +216,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
    }
    
    .header__link-item {
@@ -332,6 +333,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
@@ -413,6 +415,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
       -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
       padding-bottom: 34px;
@@ -550,6 +553,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
       -ms-flex-pack: distribute;
       justify-content: space-around;
       padding: 0px 27px 0px 0px;
@@ -603,6 +607,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
       -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
       background-color: var(--basic-nav);
@@ -1182,6 +1187,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
@@ -1493,6 +1499,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
       -webkit-box-pack: end;
       -ms-flex-pack: end;
       justify-content: flex-end;
@@ -1535,6 +1542,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
@@ -1559,6 +1567,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
@@ -1620,6 +1629,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
       -webkit-box-pack: end;
       -ms-flex-pack: end;
       justify-content: flex-end;
@@ -1655,6 +1665,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
       -webkit-box-align:center;
       -ms-flex-align:center;
       align-items:center;
@@ -1998,6 +2009,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
@@ -2050,6 +2062,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
       position: relative;
       margin-right: 37px;
       }
@@ -2101,6 +2114,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
    }
@@ -2219,6 +2233,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
       -webkit-box-pack: start;
       -ms-flex-pack: start;
       justify-content: flex-start;
@@ -2447,6 +2462,7 @@
       display: -ms-flexbox;
    
       display: flex;
+      flex-wrap: wrap;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2480,6 +2496,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
@@ -2502,6 +2519,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
