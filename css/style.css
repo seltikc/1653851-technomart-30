@@ -77,6 +77,7 @@
    
    .logo {
       display: inline-block;
+      vertical-align: top;
       background: var(--basic-red);
       box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
       width: 220px;
@@ -158,6 +159,7 @@
       position: relative;
       color: var(--basic-white);
       display: inline-block;
+      vertical-align: top;
       padding: 10px 0px 9px 43px;
    }
    
@@ -204,28 +206,33 @@
    }
    
    .header__link-item--basket {
-      padding-left: 49px;
+      width: 135px;
+      margin-left: 15px;
+      padding-left: 35px;
    }
    
    .header__link-item--basket::before {
       content: "";
+      position: absolute;
       background: url("../img/icon/icon-cart.svg") no-repeat;
+      left: 11px;
+      top: 13px;
+
       width: 15px;
       height: 15px;
-      position: absolute;
-      left: 26px;
-      top: 13px;
+      
       transition: 0.2s linear;
    }
    
    .header__link-item--basket:hover::before {
       content: "";
+      position: absolute;
       background: url("../img/icon/icon-cart1.svg") no-repeat;
+      left: 11px;
+      top: 13px;
+
       width: 15px;
       height: 15px;
-      position: absolute;
-      left: 26px;
-      top: 13px;
    }
    
    .header__link-item--green {
@@ -318,6 +325,7 @@
    
    .header__regist-item {
       display: inline-block;
+      vertical-align: top;
       position: relative;
    
       background-color: var(--basic-white);
@@ -349,6 +357,7 @@
    
    .header__regist-item a {
       display: inline-block;
+      vertical-align: top;
       transition: 0.2s linear;
    } 
    
@@ -433,24 +442,19 @@
       background: url("../img/icon/icon-user-black.svg")
    }
    
-   .account__user::after {
-      content: "";
-      background: url("../img/icon/icon-login-office.svg") no-repeat;
+   .account__icon {
       position: absolute;
-      width: 20px;
-      height: 17px;
+      top:14px;
       right: 17px;
-      top: 13px;
-      transition: 0.2s linear;
    }
-   
-   .account__user:hover::after {
-      background: url("../img/icon/login-office-black.svg") no-repeat;
+
+   .account__icon:hover path {
+      fill: #3D546F;
    }
-   
-   
+
    .account-name,.account__user {
       display: inline-block;
+      vertical-align: top;
       font-size: 21px;
       line-height: 21px;
       font-weight: 400;
@@ -688,6 +692,7 @@
    
    .advantages__link {
       display: inline-block;
+      vertical-align: top;
       font-size: 14px;
       color: var(--basic-white);
       line-height: 18px;
@@ -791,6 +796,7 @@
    .slider-bullet__btn {
       position: absolute;
       display: inline-block;
+      vertical-align: top;
       border: none;
       border-radius: 50%;
       padding: 5px;
@@ -802,6 +808,7 @@
    .slider-bullet__btn--active {
       border: none;
       display: inline-block;
+      vertical-align: top;
       padding: 5px;
       right: 294px;
       top: -54px;
@@ -824,6 +831,7 @@
    ======================================================= */
    .button {
       display: inline-block;
+      vertical-align: top;
       width: 192px;
       min-height: 38px;
       padding-top: 10px;
@@ -838,6 +846,7 @@
    
    .advantages-slider__btn {
       display: inline-block;
+      vertical-align: top;
       min-width: 192px;
       min-height: 38px;
       position: absolute;
@@ -856,6 +865,8 @@
    
    .services__description-btn {
       display: inline-block;
+      vertical-align: top;
+
       padding: 10px 8px 10px 9px;
    
       font-size: 14px;
@@ -865,6 +876,7 @@
    
    .popular__link-item--green {
       display: inline-block;
+      vertical-align: top;
       padding: 10px 0px 10px 15px;
       font-size: 14px;
       line-height: 18px;
@@ -879,6 +891,7 @@
    
    .popular__btn {
       display: inline-block;
+      vertical-align: top;
       background: url("../img/icon/red-btn.svg") no-repeat;
       min-width: 141px;
       height: 38px;
@@ -903,6 +916,7 @@
    
    .popular__link-item--bookmarks {
       display: inline-block;
+      vertical-align: top;
       padding: 10px 0px 10px 0px;
    
       font-size: 14px;
@@ -919,6 +933,7 @@
    
    .form-btn {
       display: inline-block;
+      vertical-align: top;
       padding: 10px 78px;
       text-transform: uppercase;
       font-size: 13px;
@@ -959,6 +974,7 @@
       position: relative;
       border-radius: 3px;
       display: inline-block;
+      vertical-align: top;
       width: 135px;
       height: 38px;
       margin-bottom: 10px;
@@ -1156,6 +1172,7 @@
    
    .services__item a {
       display: inline-block;
+      vertical-align: top;
       width: 240px;
 
       padding: 13px 0 19px 22px;
@@ -1319,6 +1336,7 @@
    
    .footer__logo {
       display: inline-block;
+      vertical-align: top;
       width: 220px;
       height: 68px;
       padding: 20px 41px 25px 41px;
@@ -1498,6 +1516,7 @@
    .bread-crumbs__icon a {
       background: url("../img/icon/icon-home.svg") no-repeat;
       display: inline-block;
+      vertical-align: top;
       width: 14px;
       height: 12px;
       position: absolute;
@@ -1513,6 +1532,7 @@
       content: "";
       position: absolute;
       display: inline-block;
+      vertical-align: top;
       top: 7px;
       left: -5px;
       width: 8px;
@@ -1551,6 +1571,7 @@
    ======================================================= */
    .page-catalog {
       display: grid;
+      padding-bottom: 59px;
       gap: 20px;
       grid-template-columns: 220px 1fr;
    }
@@ -1934,6 +1955,7 @@
    
    .pagination__page:last-child a {
       display: inline-block;
+      vertical-align: top;
       min-width: 140px;
    
       text-transform: uppercase;
@@ -1956,8 +1978,7 @@
    
    .perforator-bg {
       background-color: #f1f5f7;
-      padding-top: 64px;
-      margin-top: 35px;
+      padding-top: 41px;
    }
    
    .perforator-bg__subtitle {
@@ -1988,7 +2009,7 @@
       top: 50%;
       left: 50%;
       width: 620px;
-      height: 430px;
+      height: 414px;
       transform: translate(-50%,-50%);
       box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
       background-position: 0 0;
@@ -2002,7 +2023,7 @@
    }
    
    .feeldback-container {
-      padding: 46px 80px 36px 80px;
+      padding: 48px 79px 30px 73px;
    }
    
    .feeldback-form__block {
@@ -2033,6 +2054,7 @@
       font-family: "PT Sans", "Arial", sans-serif;
       font-weight: 400;
       display: inline-block;
+      vertical-align: top;
       
       width: 220px;
       height: 38px;
@@ -2069,6 +2091,7 @@
       font-weight: 400;
    
       display: inline-block;
+      vertical-align: top;
    
       border: 2px solid #C5C5C5;
       
@@ -2083,14 +2106,14 @@
       position: relative;
       background: #F4F4F4;
       width: 100%;
-      padding: 37px 0px 37px 0px;
+      padding: 37px 18px 37px 0px;
       text-align: center;
    }
    
    .modal-close {
       position: absolute;
-      top: 21px;
-      right: 11px;
+      top: 19px;
+      right: 17px;
       width: 25px;
       height:  25px;
       cursor: pointer;
@@ -2119,6 +2142,7 @@
    
    .form-botton-send {
       display: inline-block;
+      vertical-align: top;
       color: var(--basic-white);
       font-family: "PT Sans", "Arial", sans-serif;
       font-weight: 400;
@@ -2213,6 +2237,7 @@
    
    .order-added p {
       display: inline-block;
+      vertical-align: top;
       position: relative;
    
       font-family: "Cuprum", "Arial", sans-serif;
