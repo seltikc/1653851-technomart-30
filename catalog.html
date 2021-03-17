@@ -24,7 +24,7 @@
         <form class="form-search search" action="https://echo.htmlacademy.ru" method="post">
 
         <input type="search" name="Search" id="search" placeholder="Поиск:" tabindex="0">
-        <label class="search__icon" for="search">
+        <label class="search__icon" for="search" aria-label="Форма поиска по сайту">
           <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"/>
           </svg>
@@ -111,11 +111,11 @@
             </div>
               <div class="lable-block">
             <label class="lable-text">
-              <input class="lable-text__input" type="text" name="min-price" id="min-price-field" value="0">
+              <input class="lable-text__input" type="text" name="min-price" aria-label="Ползунок: выбрать минимальную стоимость" id="min-price-field" value="0">
             </label>
               
             <label class="lable-price">
-              <input class="lable-price__input" type="text" name="max-price" id="max-price-field" value="30000">
+              <input class="lable-price__input" type="text" name="max-price" aria-label="Ползунок: выбрать максимальную стоимость" id="max-price-field" value="30000">
             </label>
               </div>
           </div> 
@@ -127,27 +127,27 @@
 
               <li class="fieldset__item fieldset__item-checkbox">
                 <input class="fieldset__item-checked visually-hidden" type="checkbox" name="Bosch" id="bosch" checked> 
-                <label for="bosch" tabindex="0">Bosch</label>
+                <label for="bosch" tabindex="0" aria-label="Производитель bosch">Bosch</label>
               </li>
 
               <li class="fieldset__item fieldset__item-checkbox">
                 <input class="fieldset__item-checked visually-hidden" type="checkbox" name="Интерскол" id="interskol">
-                <label for="interskol" tabindex="0">Интерскол</label>
+                <label for="interskol" tabindex="0" aria-label="Производитель интерскол">Интерскол</label>
               </li>
 
               <li class="fieldset__item fieldset__item-checkbox">
                 <input class="fieldset__item-checked visually-hidden" type="checkbox" name="Makita" id="makita" checked>
-                <label for="makita" tabindex="0">Makita</label>
+                <label for="makita" tabindex="0" aria-label="Производитель makita">Makita</label>
               </li>
 
               <li class="fieldset__item fieldset__item-checkbox">
                 <input class="fieldset__item-checked visually-hidden" type="checkbox" name="DeWalt" id="dewalt">
-                <label for="dewalt" tabindex="0">DeWalt</label>
+                <label for="dewalt" tabindex="0" aria-label="Производитель dewalt">DeWalt</label>
               </li>
 
               <li class="fieldset__item fieldset__item-checkbox">
                 <input class="fieldset__item-checked visually-hidden" type="checkbox" name="Hitachi" id="hitachi">
-                <label class="fieldset__hitachi" for="hitachi" tabindex="0">Hitachi</label>
+                <label class="fieldset__hitachi" for="hitachi" tabindex="0" aria-label="Производитель hitachi">Hitachi</label>
               </li>
 
             </ul>
@@ -158,12 +158,12 @@
             <ul class="fieldset__list list-reset">
               <li class="fieldset__item fieldset__item-radio">
                 <input class="fieldset__item-checked2 visually-hidden" type="radio" name="power" id="battery" value="Аккумуляторные" checked>
-                <label for="battery" tabindex="0">Аккумуляторные</label>
+                <label for="battery" tabindex="0" aria-label="Перфораторы аккумуляторные">Аккумуляторные</label>
               </li>
 
               <li class="fieldset__item fieldset__item-radio">
                 <input class="fieldset__item-checked2 visually-hidden" type="radio" name="power" id="electric" value="Сетевые">
-                <label for="electric" tabindex="0">Сетевые</label>
+                <label for="electric" tabindex="0" aria-label="Перфораторы сетевые">Сетевые</label>
               </li>
             </ul>
         </fieldset>

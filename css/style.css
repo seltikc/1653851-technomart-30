@@ -115,6 +115,7 @@
    
    .logo {
       display: inline-block;
+      vertical-align: top;
       background: var(--basic-red);
       -webkit-box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
       box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
@@ -224,6 +225,7 @@
       position: relative;
       color: var(--basic-white);
       display: inline-block;
+      vertical-align: top;
       padding: 10px 0px 9px 43px;
    }
    
@@ -404,6 +406,7 @@
    
    .header__regist-item {
       display: inline-block;
+      vertical-align: top;
       position: relative;
    
       background-color: var(--basic-white);
@@ -439,6 +442,7 @@
    
    .header__regist-item a {
       display: inline-block;
+      vertical-align: top;
       -webkit-transition: 0.2s linear;
       -o-transition: 0.2s linear;
       transition: 0.2s linear;
@@ -1519,6 +1523,11 @@
    
    .footer__item a:hover {
       text-decoration: underline;
+   }
+
+   .footer__item a:active {
+      opacity: 0.5;
+      text-decoration: none;
    }
    
    .footer__list--goods a {
